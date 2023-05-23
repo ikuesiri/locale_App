@@ -5,6 +5,7 @@ const app = express();
 
 const CONFIG = require("./CONFIG/env.config"); //environment variables
 const connectDB = require("./CONFIG/db.config");
+const authRouter = require("./model/auth.model");
 
 // Middleware for rate limiting
 const limiter = rateLimit({
@@ -12,20 +13,43 @@ const limiter = rateLimit({
     max: 100, // maximum 100 requests per windowMs
     message: 'Too many requests, please try again later.',
   });
+
+    // Apply rate limiter to all requests
+    app.use(limiter);
   
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended : true}))
 app.set(express.static("public"));
 app.set('view engine', 'ejs');
 
-  // Apply rate limiter to all requests
-  app.use(limiter);
+
 
 app.get("/", (req, res) => {
-    res.render('locale');
+    res.send({
+        success: true,
+        message: " Welcome to KIK Locale service"
+    })
+});
+
+//app middleware to the user registration & login routes
+app.use("/api/v1/auth", authRouter);
+
+app.all( "*", (req, res) =>{
+    res.status(404).send({
+        errorMessage: `Invalid Page`
+    })
+    res.redirect("/");
+})
+
+//error handler
+app.use((error, req, res, next) =>{
+    return res.status(500).send({
+        errorMessage: error.message
+    })
 })
 
 
+//server-DB
 const start = async() =>{
     try {
         await connectDB(CONFIG.mongo_uri);

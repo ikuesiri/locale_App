@@ -1,8 +1,12 @@
 const mongooose = require("mongoose");
 const bcrypt = require('bcrypt');
+const jwt = require("jsonwebtoken");
+const CONFIG = require("../CONFIG/env.config");
+
 const userSchema = new mongooose.Schema({
     username: {
         type : String,
+        required :[ true, "Provide your username"],
         maxlength: [ 12, "Username is Too Long"],
         minlength:[ 1, "Username is too short, please try again"],
       lowercase : true //converts input to lowercase
@@ -33,5 +37,20 @@ userSchema.pre('save', async function(next) {
 })
 
 
-const userModel = mongooose.model("User", userSchema);
-module.exports = userModel;
+userSchema.methods.generateJWT= function () {
+    return jwt.sign( {userId: this._id, username:this.username, email: this.email},
+        CONFIG.jwt_secret, 
+        // {
+        //     expiresIn : CONFIG.jwt_lifetime || '5h'
+        // }
+        
+        )
+}
+
+
+userSchema.methods.isPasswordValid = async function (password){
+    return await bcrypt.compare( password, this.password)
+}
+
+const User = mongooose.model("User", userSchema);
+module.exports = User;
