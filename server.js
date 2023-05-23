@@ -5,7 +5,7 @@ const app = express();
 
 const CONFIG = require("./CONFIG/env.config"); //environment variables
 const connectDB = require("./CONFIG/db.config");
-const authRouter = require("./model/auth.model");
+const authRouter = require("./routes/auth.route");
 
 // Middleware for rate limiting
 const limiter = rateLimit({
@@ -17,11 +17,14 @@ const limiter = rateLimit({
     // Apply rate limiter to all requests
     app.use(limiter);
   
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended : true}))
-app.set(express.static("public"));
-app.set('view engine', 'ejs');
+// app.use(bodyParser.json())
+// app.use(bodyParser.urlencoded({ extended : true}))
+// app.set(express.static("public"));
+// app.set('view engine', 'ejs');
 
+//middleware to grab post/patch requests as json files or other files
+app.use(express.json())
+app.use(express.urlencoded({extended : true}))
 
 
 app.get("/", (req, res) => {
@@ -43,7 +46,7 @@ app.all( "*", (req, res) =>{
 
 //error handler
 app.use((error, req, res, next) =>{
-    return res.status(500).send({
+    res.status(500).send({
         errorMessage: error.message
     })
 })

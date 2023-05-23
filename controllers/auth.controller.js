@@ -4,7 +4,7 @@ const User = require("../model/auth.model");
 const registerUser = async(req, res, next) => {
     const { username, email, password} = req.body
     if( !username || !email   || ! password){
-        res.status(404).send({message: `incomplete details, fill in all your details`})
+        res.status(400).send({message: `incomplete details, fill in all your details`})
     }
 
     try {
@@ -20,7 +20,7 @@ const registerUser = async(req, res, next) => {
           })
          
           //create token
-          const token = user.generateJWT();
+          const token = await user.generateJWT();
          await user.save();
          res.status(201).send({
             success: true,
@@ -46,7 +46,7 @@ const login = async( req, res, next ) => {
     const { email, password } = req.body;
 
     if( !email || !password){
-        return res.status(401).send({
+        return res.status(400).send({
             success: false,
             errorMessage: `Enter your Email and Password details`
         })
@@ -62,7 +62,7 @@ const login = async( req, res, next ) => {
             })
         }
 
-        const passwordValidation =  user.isPasswordValid();
+        const passwordValidation = await user.isPasswordValid(password);
         if(!passwordValidation){
             return res.status(401).send({
                 success: false,
