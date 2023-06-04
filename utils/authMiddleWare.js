@@ -1,29 +1,54 @@
 const jwt = require('jsonwebtoken');
 const CONFIG = require("../CONFIG/env.config");
+const User = require("../model/auth.model");
 
 
-const authenticate = (req, res, next) => {
-    const authHeader = req.headers.authorization;
-    if(!authHeader  ||  ! authHeader.startsWith('Bearer ')){
-        throw new Error('Invalid Authentication')
-    }
 
 
-    const token = authHeader.split(" ")[1];
-    // console.log(token)
-
+const validateApiKey = (async (req, res, next) =>{
+    const apiKey = req.query.apiKey
     try {
-        const payload = jwt.verify(token, CONFIG.jwt_secret)
-
-        //useful when attaching the user[author] to the protected articles route
-        req.user = {userID : payload.userID, email : payload.email, username : payload.username}
+        if(!apiKey){
+            return res.status(401).json({errorMessage: `You're authorized! Kind add your "apiKey" as a query`})
+        }
+        const validate =  await User.findOne({apiKey});
+        if(!validate){
+            return res.status(401).json({errorMessage: `Invalid Api Key!`})
+        }
         next()
-
+    
     } catch (error) {
-        throw new Error('Invalid Authentication')
-
+        console.error(error)
     }
-}
+    
+})
 
-module.exports = authenticate
 
+module.exports = validateApiKey;
+
+
+
+// const authenticate = (req, res, next) => {
+//     const authHeader = req.headers.authorization;
+//     if(!authHeader  ||  ! authHeader.startsWith('Bearer ')){
+//         throw new Error('Invalid Authentication')
+//     }
+    
+
+//     const token = authHeader.split(" ")[1];
+//     // console.log(token)
+
+//     try {
+//         const payload = jwt.verify(token, CONFIG.jwt_secret)
+
+//         //useful when attaching the user[author] to the protected articles route
+//         // req.user = {userID : payload.userID, email : payload.email, username : payload.username}
+//         next()
+
+//     } catch (error) {
+//         throw new Error('Invalid Authentication')
+
+//     }
+// }
+
+// module.exports = authenticate

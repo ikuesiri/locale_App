@@ -1,4 +1,5 @@
 const User = require("../model/auth.model");
+const { v4: uuidv4 } = require('uuid');
 
 // Registration
 const registerUser = async(req, res, next) => {
@@ -16,20 +17,23 @@ const registerUser = async(req, res, next) => {
           const user = new User ({
             username,
             email,
-            password
+            password,
+            apiKey: uuidv4()
           })
+
          
-          //create token
-          const token = await user.generateJWT();
+          //create 
+        //   const token = await user.generateJWT();
          await user.save();
          res.status(201).send({
             success: true,
-            message: "Registration completed!!!, Make sure you keep you Save your token",
+            message: "Registration completed!!!, Make sure you keep your API KEY  Safe!",
             user: {
                 id:user._id,
                 username: user.username,
                 email: user.email,
-                token
+                apiKey: user.apiKey
+                // token
             }
 
          })
@@ -61,7 +65,7 @@ const login = async( req, res, next ) => {
                 errorMessage: `Invalid Information. Enter a registered email`
             })
         }
-
+        
         const passwordValidation = await user.isPasswordValid(password);
         if(!passwordValidation){
             return res.status(401).send({

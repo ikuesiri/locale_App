@@ -1,0 +1,2069 @@
+ {
+    "geopolitical_regions": [
+      {
+        "name": "North Central",
+        "states": [
+          {
+            "name": "Federal Capital Territory",
+            "lgas": [
+                "Abuja",
+                "Kwali",
+                "Kuje",
+                "Gwagwalada",
+                "Bwari",
+                "Abaji"
+            ],
+            "metadata": {
+                "capital":"Abuja",
+                "other_cities": [],
+                "lga_count": 6,
+                "region": "North Central",
+                "state_border":["Kaduna","Kwara","Niger","Plateau"],
+                "international_border": [],
+                "slogan": "Centre of Unity",
+                "date_created": "3 February 1976",
+                "current_govenor": "N/A",
+                "Area": "7,315 km2 (2,824 sq mi)",
+                "coordinates": "8°50′N 7°10′E",
+                "google_map_url": "https://www.google.com/maps/place/Abuja,+Nigeria",
+                "population": 2702443,
+                "GDP_2021": {
+                    "total":"N/A",
+                    "per_capita": "N/A"
+                },
+                "major_ethnic_groups": ["Gwari", "Igbo", "Hausa", "Yoruba"],
+                "major_languages":  ["English", "Hausa", "Igbo", "Yoruba"],
+                "popular_dishes":  ["Suya", "Jollof Rice", "Moi Moi"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/en/a/a9/Flag_of_Abuja_Federal_Capital_Territory.png",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/en/3/39/Emblem_of_of_Abuja_Federal_Capital_Territory.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Nigeria_Federal_Capital_Territory_map.png"
+                },
+                "website": "http://www.fcta.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Benue",
+            "lgas": [
+                "Ado",
+                "Agatu",
+                "Apa",
+                "Buruku",
+                "Gboko",
+                "Guma",
+                "Gwer-East",
+                "Gwer-West",
+                "Katsina-Ala",
+                "Konshisha",
+                "Kwande",
+                "Logo",
+                "Makurdi",
+                "Ogbadibo",
+                "Ohimini",
+                "Oju",
+                "Okpokwu",
+                "Otukpo",
+                "Tarka",
+                "Ukum",
+                "Ushongo",
+                "Vandeikya"
+            ],
+            "metadata": {
+                "capital":"Makurdi",
+                "other_cities": [ "Gboko", "Otukpo"],
+                "lga_count": 23,
+                "region": "North Central",
+                "state_border":["Nasarawa", "Taraba","Kogi", "Enugu", "Ebonyi", "Cross River"],
+                "international_border": ["Cameroon"],
+                "slogan": "Food basket of the Nation",
+                "date_created": "3rd February 1976",
+                "current_governor": "Samuel Ortom",
+                "Area": "34,059 km2 (13,150 sq mi)",
+                "coordinates": "7°20′N 8°45′E",
+                "google_map_url": "https://www.google.com/maps/place/Benue,+Nigeria",
+                "population": 5787706,
+                "GDP_2021": {
+                    "total":"$27.64 billion",
+                    "per_capita": "$4,141"
+                },
+                "major_ethnic_groups": ["Tiv", "Idoma", "Igede"],
+                "major_languages": ["Tiv", "Idoma", "Igede"],
+                "popular_dishes": ["Igede Agidi", "Akwukwo", "Aku"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/en/8/89/Flag_of_Benue_State.png",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/6/62/Seal_of_Benue_State.png",
+                    "map_image": "https://upload.wikimedia.org/wikipedia/commons/1/18/Nigeria_-_Benue.svg"
+                    
+                },
+                "website": "N/A"
+                
+              }
+          },
+          {
+            "name": "Kogi",
+            "lgas": [
+                "Adavi",
+                "Ajaokuta",
+                "Ankpa",
+                "Dekina",
+                "Ibaji",
+                "Idah",
+                "Igalamela-Odolu",
+                "Ijumu",
+                "Kabba/Bunu",
+                "Kogi",
+                "Lokoja",
+                "Mopa-Muro",
+                "Ofu",
+                "Ogori/Magongo",
+                "Okehi",
+                "Okene",
+                "Olamaboro",
+                "Omala",
+                "Oyi",
+                "Yagba-East",
+                "Yagba-West"
+            ],
+            "metadata": {
+                "capital":"Lokoja",
+                "other_cities": ["Ankpa", "Anyigba", "Dekina","Egbe","Ibaji","Idah","Ijumu" ],
+                "lga_count": 21,
+                "region": "North Central",
+                "state_border":["Ekiti","Kwara", "Federal Capital Territory",  "Nasarawa", "Niger", "Edo", "Ondo"],
+                "international_border": [],
+                "slogan": "The Confluence State",
+                "date_created": "27 August 1991",
+                "current_governor": "Yahaya Bello",
+                "Area": "29,833 km2 (11,519 sq mi)",
+                "coordinates": "7°30′N 6°42′E",
+                "google_map_url" : "https://www.google.com/maps/place/Kogi,+Nigeria",
+                "population": 4153734,
+                "GDP_2021": {
+                    "total":"$23.88 billion",
+                    "per_capita": "$4,593"
+                },
+                "major_ethnic_groups": ["Igala", "Ebira", "Okun"],
+                "major_languages": ["Igala", "Ebira", "Yoruba"],
+                "popular_dishes": ["Pounded Yam and Egusi Soup", "Ogbono Soup", "Ebira Okra Soup"],
+                "image": {
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Kogi_State_Flag.svg",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/en/d/d1/Kogi_State_Seal.png",
+                    "map_image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Nigeria_-_Kogi.svg"
+                    
+                },
+                "website": "http://www.kogistate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Kwara",
+            "lgas": [
+                "Asa",
+                "Baruten",
+                "Edu",
+                "Ekiti (Araromi/Opin)",
+                "Ilorin-East",
+                "Ilorin-South",
+                "Ilorin-West",
+                "Isin",
+                "Kaiama",
+                "Moro",
+                "Offa",
+                "Oke-Ero",
+                "Oyun",
+                "Pategi"
+            ],
+            "metadata": {
+                "capital":"Ilorin",
+                "other_cities": ["Lafiagi", "Omu-Aran","Offa", "Kisha", "Ajasse Ipo"],
+                "lga_count": 16,
+                "region": "North Central",
+                "state_border":["Kogi", "Niger","Ekiti", "Osun", "Oyo"],
+                "international_border": ["Benin Republic"],
+                "slogan": "The state of Harmony",
+                "date_created": "27 May 1967",
+                "current_governor": "Abdulfatah Ahmed",
+                "Area": "36,825 km2 (14,218 sq mi)",
+                "coordinates": "8°30′N 5°00′E",
+                "google_map_url": "https://www.google.com/maps/place/Kwara,+Nigeria",
+                "population": 3259613,
+                "GDP_2021": {
+                    "total":"$8.91 billion",
+                    "per_capita": "$2,401"
+                },
+                "major_ethnic_groups": ["Yoruba", "Nupe","Bariba"],
+                "major_languages": ["Yoruba", "Nupe", "Bariba"],
+                "popular_dishes": ["Sobo", "Iresi", "Eran Igbe"],
+                "image_url":{
+                    "flag_img":"https://upload.wikimedia.org/wikipedia/commons/c/c6/Kwara_State_Flag.jpg",
+                    "seal_img":"https://upload.wikimedia.org/wikipedia/en/2/21/Emblem_of_Kwara_State.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/8/82/Nigeria_Kwara_State_map.png"
+                    
+                },
+                "website": "http://www.kwarastate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Nasarawa",
+            "lgas": [
+                "Akwanga",
+                "Awe",
+                "Doma",
+                "Karu",
+                "Keana",
+                "Keffi",
+                "Kokona",
+                "Lafia",
+                "Nasarawa",
+                "Nasarawa-Eggon",
+                "Obi",
+                "Wamba",
+                "Toto"
+            ],
+            "metadata": {
+                "capital":"Lafia",
+                "other_cities": ["Akwanga", "Doma", "Karu", "Keffi", "Nasarawa", "Nasarawa-Egon","Wamba"],
+                "lga_count": 13,
+                "region": "North Central",
+                "state_border":["Kaduna", "Federal Capital Territory", "Kogi", "Benue", "Taraba", "Plateau"],
+                "international_border": [],
+                "slogan": "The home of Solid Minerals",
+                "date_created": "1st October 1996",
+                "current_governor": "Abdullahi Sule",
+                "Area": "26,256 km2 (10,137 sq mi)",
+                "coordinates": "8°32′N 8°18′E",
+                "google_map_url": "https://www.google.com/maps/place/Nasarawa,+Nigeria",
+                "population": 2632239,
+                "GDP_2021": {
+                    "total":"$12.01 billion",
+                    "per_capita": "$4,099"
+                },
+                "major_ethnic_groups": ["Gwandara", "Eggon", "Mada"],
+                "major_languages": ["Gwandara", "Eggon", "Mada"],
+                "popular_dishes": ["Miyan Kuka", "Dambu Nama", "Tuwon Shinkafa"],
+                "image":{
+                    "flag_img": "Not found!",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Seal_of_Nasarawa_State.svg",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Nigeria_-_Nasarawa.svg"
+                    
+                },
+                "website": "http://www.nasarawastate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Niger",
+            "lgas": [
+                "Agaie",
+                "Agwara",
+                "Bida",
+                "Borgu",
+                "Bosso",
+                "Chanchaga",
+                "Edati",
+                "Gbako",
+                "Gurara",
+                "Katcha",
+                "Kontagora",
+                "Lapai",
+                "Lavun",
+                "Magama",
+                "Mariga",
+                "Mashegu",
+                "Mokwa",
+                "Moya",
+                "Paikoro",
+                "Rafi",
+                "Rijau",
+                "Shiroro",
+                "Suleja",
+                "Tafa",
+                "Wushishi"
+            ],
+            "metadata": {
+                "capital":"Minna",
+                "other_cities": ["Bida","Kontagora","Suleja"],
+                "lga_count": 25,
+                "region": "North Central",
+                "state_border":["Kebbi", "Zamfara", "Kaduna", "Kogi", "Kwara", "Benue"],
+                "international_border": [],
+                "slogan": "The power State",
+                "date_created": "3 February 1976",
+                "current_governor": "Abubakar Sani Bello",
+                "Area": "76,363 km2 (29,484 sq mi)",
+                "coordinates": "10°00′N 6°00′E",
+                "google_map_url": "https://www.google.com/maps/place/Niger,+Nigeria",
+                "population": 6220617 ,
+                "GDP_2021": {
+                    "total":"$29.63 billion",
+                    "per_capita": "$4,496"
+                },
+                "major_ethnic_groups": ["Nupe", "Gbagyi", "Kamuku", "Kambari", "Gungawa", "Hun-Saare", "Hausa","Koro"],
+                "major_languages": ["Nupe", "Gwari", "Kamuku"],
+                "popular_dishes": ["Fura da Nono", "Gwate", "Tuwon Dawa"],
+                "image":{
+                    "flag_img": "N/A",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/en/7/70/Niger_State_Emblem.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Nigeria_-_Niger.svg"
+                    
+                },
+                "website": "http://www.nigerstate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Plateau",
+            "lgas": [
+                "Barkin-Ladi",
+                "Bassa",
+                "Bokkos",
+                "Jos-East",
+                "Jos-North",
+                "Jos-South",
+                "Kanam",
+                "Kanke",
+                "Langtang-North",
+                "Langtang-South",
+                "Mangu",
+                "Mikang",
+                "Pankshin",
+                "Qua'an Pan",
+                "Riyom",
+                "Shendam",
+                "Wase"
+            ],
+            "metadata": {
+                "capital":"Jos",
+                "other_cities": ["Jos", "Bukuru", "Langtang", "Pankshin"],
+                "lga_count": 17,
+                "region": "North Central",
+                "state_border": ["Bauchi", "Kaduna", "Nasarawa", "Benue", "Taraba"],
+                "international_border": [],
+                "slogan": "Home of peace and tourism",
+                "date_created": "3rd February 1976",
+                "current_governor": "Simon Lalong",
+                "Area": "30,913 km2 (11,936 sq mi)",
+                "coordinates": "9°10′N 9°45′E",
+                "google_map_url": "https://www.google.com/maps/place/Plateau,+Nigeria",
+                "population": 4400974 ,
+                "GDP_2021": {
+                    "total":"$9.69 billion",
+                    "per_capita": "$2,014"
+                },
+                "major_ethnic_groups": ["Berom", "Afizere", "Tarok"],
+                "major_languages": ["Berom", "Afizere", "Jarawa"],
+                "popular_dishes": ["Nkye", "Pandam Kanki", "Fura da Nono"],
+                "image":{
+                    "flag_img": "N/A",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/5/59/Plateau_State_logo.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/5/50/Nigeria_-_Plateau.svg"
+                    
+                },
+                "website": "http://plateaustate.gov.ng/"
+                
+              }
+          }
+        ]
+      },
+      {
+        "name": "North East",
+        "states": [
+          {
+            "name": "Adamawa",
+            "lgas": [
+                "Demsa",
+                "Fufore",
+                "Ganye",
+                "Girei",
+                "Gombi",
+                "Guyuk",
+                "Hong",
+                "Jada",
+                "Lamurde",
+                "Madagali",
+                "Maiha",
+                "Mayo-Belwa",
+                "Michika",
+                "Mubi-North",
+                "Mubi-South",
+                "Numan",
+                "Shelleng",
+                "Song",
+                "Toungo",
+                "Yola North",
+                "Yola South"
+            ],
+            "metadata": {
+                "capital":"Yola",
+                "other_cities": ["Jimeta", "Mubi", "Guyuk","Madagali", "Michika", "Numan","Girei", "Fufore"],
+                "lga_count": 21,
+                "region": "North East",
+                "state_border":["Borno", "Gombe", "Taraba"],
+                "international_border": ["Cameroon"],
+                "slogan": "Highest peak of the nation",
+                "date_created": "August 27, 1991",
+                "current_governor": "Jibrilla Bindow",
+                "Area": "36,917 km2 (14,254 sq mi)",
+                "coordinates": "9°20′N 12°30′E",
+                "google_map_url": "https://www.google.com/maps/place/Adamawa,+Nigeria",
+                "population": 4536948 ,
+                "GDP_2021": {
+                    "total":"$5.77 billion",
+                    "per_capita": "N/A"
+                },
+                "major_ethnic_groups": ["Fulani", "Bachama", "Chamba", "Gude"],
+                "major_languages": ["Fulani", "Bachama", "Chamba", "Gude"],
+                "popular_dishes": ["Fulani Suya", "Malambo", "Kilishi"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Adamawa_State_Flag.svg",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Seal_of_Adamawa_State.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Nigeria_-_Adamawa.svg"
+                    
+                },
+                "website": "http://www.adamawastate.gov.ng/"
+                
+                
+              }
+          },
+          {
+            "name": "Bauchi",
+            "lgas": [
+                "Alkaleri",
+                "Bauchi",
+                "Bogoro",
+                "Damban",
+                "Darazo",
+                "Dass",
+                "Gamawa",
+                "Ganjuwa",
+                "Giade",
+                "Itas/Gadau",
+                "Jama'Are",
+                "Katagum",
+                "Kirfi",
+                "Misau",
+                "Ningi",
+                "Shira",
+                "Tafawa-Balewa",
+                "Toro",
+                "Warji",
+                "Zaki"
+            ],
+            "metadata": {
+                "capital":"Bauchi",
+                "other_cities": ["Alkaleri", "Misau","Ningi", "Dass","Ganjuwa", "Jama′are", "Kangere" ],
+                "lga_count": 20,
+                "region": "North East",
+                "state_border":["Kano","Jigawa","Taraba", "Plateau", "Gombe", "Yobe", "Kaduna"],
+                "international_border": [],
+                "slogan": "Pearl of Tourism",
+                "date_created": "3 February 1976",
+                "current_govenor": "Bala Mohammed",
+                "Area": "45,893 km2 (17,719 sq mi)",
+                "coordinates": "49,119 km2 (18,965 sq mi)",
+                "google_map_url": "https://www.google.com/maps/place/Bauchi,+Nigeria",
+                "population": 7540663 ,
+                "GDP_2021": {
+                    "total":"$17.01 billion",
+                    "per_capita": "$2,194"
+                },
+                "major_ethnic_groups": ["Baju", "Fulani", "Sayawa", "Kanuri"],
+                "major_languages": ["Hausa", "Fulfulde", "Sayawa", "Kanuri"],
+                "popular_dishes": ["Tuwo Shinkafa", "Kilishi", "Dambun Nama"],
+                "image":{
+                    "flag_img": "N/A",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/5/57/Bauchi_State_Coat_of_arms.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Nigeria_Bauchi_State_map.png"
+                },
+                "website": "http://www.bauchistate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Borno",
+            "lgas": [
+                "Abadam",
+                "Askira-Uba",
+                "Bama",
+                "Bayo",
+                "Biu",
+                "Chibok",
+                "Damboa",
+                "Dikwa",
+                "Gubio",
+                "Guzamala",
+                "Gwoza",
+                "Hawul",
+                "Jere",
+                "Kaga",
+                "Kala/Balge",
+                "Konduga",
+                "Kukawa",
+                "Kwaya-Kusar",
+                "Mafa",
+                "Magumeri",
+                "Maiduguri",
+                "Marte",
+                "Mobbar",
+                "Monguno",
+                "Ngala",
+                "Nganzai",
+                "Shani"
+            ],
+            "metadata": {
+                "capital":"Maiduguri",
+                "other_cities": ["Biu","Bama", "Monguno", "Gwoza", "Dikwa", "Konduga", "Mafa", "Damboa", "Banki"],
+                "lga_count": 27,
+                "region": "North East",
+                "state_border":["Yobe", "Gombe","Adamawa"],
+                "international_border": ["Republic of Niger", "Cameroon", "Chad"],
+                "slogan": "Home Of Peace",
+                "date_created": "3rd of February, 1976",
+                "current_govenor": "Babagana Zulum",
+                "Area": "105.5 km2 (40.7 sq mi)",
+                "coordinates": "11°50′N 13°09′E",
+                "google_map_url": "https://www.google.com/maps/place/Borno,+Nigeria",
+                "population": 5751590,
+                "GDP_2021": {
+                    "total":"N/A",
+                    "per_capita": "N/A"
+                },
+                "major_ethnic_groups": ["Kanuri", "Babur", "Shuwa Arab", "Marghi"],
+                "major_languages": ["Kanuri", "Babur", "Shuwa Arab", "Marghi"],
+                "popular_dishes": ["Fulfulde", "Budmatiri", "Kilishi"],
+                "image":{
+                    "flag_img": "N/A",
+                    "seal_img": "N/A",
+                    "map_img": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi0.wp.com%2Fwww.naijahomebased.com%2Fwp-content%2Fuploads%2F2018%2F11%2FBorno-State.jpg%3Ffit%3D696%252C445%26ssl%3D1&tbnid=X21i3_Q-wFEI3M&vet=12ahUKEwj31KSR6JX_AhWhpicCHZa8DEAQMygvegUIARCtAg..i&imgrefurl=https%3A%2F%2Fwww.naijahomebased.com%2Flist-27-local-government-areas-borno-state%2F&docid=bQeumhi7LJf2sM&w=696&h=445&q=borno%20nigeria%20map&ved=2ahUKEwj31KSR6JX_AhWhpicCHZa8DEAQMygvegUIARCtAg"
+                },
+                "website": "https://www.google.com/maps/place/Borno,+Nigeria"
+                
+              }
+          },
+          {
+            "name": "Gombe",
+            "lgas": [
+                "Akko",
+                "Balanga",
+                "Billiri",
+                "Dukku",
+                "Funakaye",
+                "Gombe",
+                "Kaltungo",
+                "Kwami",
+                "Nafada/Bajoga",
+                "Shomgom",
+                "Yamaltu/Deba"
+            ],
+            "metadata": {
+                "capital":"Gombe",
+                "other_cities": ["Kumo", "Deba Habe", "Pindiga", "Dukku", "Nafada"],
+                "lga_count": 11,
+                "region": "North East",
+                "state_border":["Borno","Yobe","Taraba","Adamawa","Bauchi"],
+                "international_border": [],
+                "slogan": "Jewel in the Savannah",
+                "date_created": "1 October 1996",
+                "current_govenor": "Muhammad Inuwa Yahaya",
+                "Area": "18,768 km2 (7,246 sq mi)",
+                "coordinates": "10°15′N 11°10′E",
+                "google_map_url": "https://www.google.com/maps/place/Gombe,+Nigeria",
+                "population": 3623462,
+                "GDP_2021": {
+                    "total":"$13.58 billion",
+                    "per_capita": "$3,553"
+                },
+                "major_ethnic_groups": ["Hausa", "Fulani", "Tangale", "Waja"],
+                "major_languages": ["Hausa", "Fulfulde", "Tangale", "Waja"],
+                "popular_dishes": ["Tuwo Shinkafa", "Fulani Suya", "Waina"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/8/82/Flag_of_Gombe_State.svg",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/en/8/8c/Gombe_State_Seal.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Nigeria_Gombe_State_map.png"
+                },
+                "website": "http://gombestate.gov.ng/"             
+              }
+          },
+          {
+            "name": "Taraba",
+            "lgas": [
+                "Ardo-Kola",
+                "Bali",
+                "Donga",
+                "Gashaka",
+                "Gassol",
+                "Ibi",
+                "Jalingo",
+                "Karim-Lamido",
+                "Kurmi",
+                "Lau",
+                "Sardauna",
+                "Takum",
+                "Ussa",
+                "Wukari",
+                "Yorro",
+                "Zing"
+            ],
+            "metadata": {
+                "capital":"Jalingo",
+                "other_cities": ["Bali","Kurmi","Sardauna","Gashaka","Takun","Wukari","Ibi" ],
+                "lga_count": 16,
+                "region": "North East",
+                "state_border":["Nasarawa","Benue","Plateau","Bauchi","Gombe","Adamawa"],
+                "international_border": ["Cameroon"],
+                "slogan": "Seat of the Caliphate",
+                "date_created": "27 August 1991",
+                "current_govenor": "Aminu Waziri Tambuwal",
+                "Area": "54,473 km2 (21,032 sq mi)",
+                "coordinates": "8°00′N 10°30′E",
+                "google_map_url": "https://www.google.com/maps/place/Taraba,+Nigeria",
+                "population": 3331885,
+                "GDP_2021": {
+                    "total":"$13.27 billion",
+                    "per_capita": "$3,720"
+                },
+                "major_ethnic_groups": ["Jukun", "Tiv", "Kuteb", "Wurkum", "Fulani","Yandang","Mumuye"],
+                "major_languages": ["Jukun", "Tiv", "Kuteb", "Wurkum", "Fulfulde"],
+                "popular_dishes": ["Tuwon Shinkafa", "Mbatuku", "Ncha"],
+                "image":{
+                    "flag_img": "N/A",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Taraba_State_Coat_of_Arms.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Nigeria_-_Taraba.svg"
+                },
+                "website": "http://www.tarabastate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Yobe",
+            "lgas": [
+                "Bade",
+                "Bursari",
+                "Damaturu",
+                "Fika",
+                "Fune",
+                "Geidam",
+                "Gujba",
+                "Gulani",
+                "Jakusko",
+                "Karasuwa",
+                "Machina",
+                "Nangere",
+                "Nguru",
+                "Potiskum",
+                "Tarmuwa",
+                "Yunusari",
+                "Yusufari"
+            ],
+            "metadata": {
+                "capital":"Damaturu",
+                "other_cities": [],
+                "lga_count": 17,
+                "region": "North East",
+                "state_border":["Bauchi","Borno","Gombe","Jigawa"],
+                "international_border": ["Republic of Niger"],
+                "slogan": "Pride of the Sahel",
+                "date_created": "27 August 1991",
+                "current_govenor": "Mai Mala Buni",
+                "Area": "45,502 km2 (17,568 sq mi)",
+                "coordinates": "12°00′N 11°30′E",
+                "google_map_url": "https://www.google.com/maps/place/Yobe,+Nigeria",
+                "population": 5317793,
+                "GDP_2021": {
+                    "total":"$7.05 billion",
+                    "per_capita": "$1,797"
+                },
+                "major_ethnic_groups": ["Kanuri", "Bade", "Ngizim", "Fulani"],
+                "major_languages": ["Kanuri", "Bade", "Ngamo", "Fulfulde"],
+                "popular_dishes": ["Waina", "Fulani Suya", "Masa"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/0/06/Yobe_State_Flag.png",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Yobe_State_Government.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/6/63/Nigeria_Yobe_State_map.png"
+                },
+                "website": "N/A"
+                
+              }
+          }
+        ]
+      },
+      {
+        "name": "North West",
+        "states": [
+          {
+            "name": "Jigawa",
+            "lgas": [
+                "Auyo",
+                "Babura",
+                "Biriniwa",
+                "Birnin-Kudu",
+                "Buji",
+                "Dutse",
+                "Gagarawa",
+                "Garki",
+                "Gumel",
+                "Guri",
+                "Gwaram",
+                "Gwiwa",
+                "Hadejia",
+                "Jahun",
+                "Kafin-Hausa",
+                "Kaugama",
+                "Kazaure",
+                "Kiri kasama",
+                "Maigatari",
+                "Malam Madori",
+                "Miga",
+                "Ringim",
+                "Roni",
+                "Sule-Tankarkar",
+                "Taura",
+                "Yankwashi"
+            ],
+            "metadata": {
+                "capital":"Dutse",
+                "other_cities": [ "Gumel", "Hadejia", "Kazaure", "Birnin Kudu"],
+                "lga_count": 27,
+                "region": "North West",
+                "state_border":["Kano", "Katsina","Bauchi","Yobe"],
+                "international_border": ["Republic of Niger"],
+                "slogan": "The New World",
+                "date_created": "August 27, 1991",
+                "current_govenor": "Mohammed Badaru Abubakar",
+                "Area": "23,154 km2 (8,940 sq mi)",
+                "coordinates": "12°00′N 9°45′E",
+                "google_map_url": "https://www.google.com/maps/place/Jigawa,+Nigeria",
+                "population": 6779080,
+                "GDP_2021": {
+                    "total":"$13.97 billion",
+                    "per_capita": "$2,074"
+                },
+                "major_ethnic_groups": ["Hausa", "Fulani", "Bade", "Kanuri"],
+                "major_languages": ["Hausa", "Fulani", "Bade", "Kanuri"],
+                "popular_dishes": ["Tuwo Shinkafa", "Fulani Suya", "Miyan Kuka"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Jigawa_State_Flag.png",
+                    "seal_img": "N/A",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Nigeria_Jigawa_State_map.png"
+                },
+                "website": "http://www.jigawastate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Kaduna",
+            "lgas": [
+                "Birnin-Gwari",
+                "Chikun",
+                "Giwa",
+                "Igabi",
+                "Ikara",
+                "Jaba",
+                "Jema'A",
+                "Kachia",
+                "Kaduna-North",
+                "Kaduna-South",
+                "Kagarko",
+                "Kajuru",
+                "Kaura",
+                "Kauru",
+                "Kubau",
+                "Kudan",
+                "Lere",
+                "Makarfi",
+                "Sabon-Gari",
+                "Sanga",
+                "Soba",
+                "Zangon-Kataf",
+                "Zaria"
+            ],
+            "metadata": {
+                "capital":"Kaduna",
+                "other_cities": ["Zaria", "Jaji", "Kagoro", "Birnin Gkaduna", "Zaria", "Jaji", "Birnin Gwari", "Kajuru", "Kaura"],
+                "lga_count": 23,
+                "region": "North West",
+                "state_border":["Zamfara","Katsina","Niger","Federal Capital Territory","Nasarawa","Plateau","Kano"],
+                "international_border": [],
+                "slogan": "Centre of learning",
+                "date_created": "27th of May, 1967",
+                "current_govenor": "Nasir Ahmad el-Rufai",
+                "Area": "431 km2 (166 sq mi)",
+                "coordinates": "10°31′23″N 7°26′25″E",
+                "google_map_url": "https://www.google.com/maps/place/Kaduna,+Nigeria",
+                "population": 8324285,
+                "GDP_2021": {
+                    "total":"N/A",
+                    "per_capita": "N/A"
+                },
+                "major_ethnic_groups": ["Gbagyi","Adara","Hausa","Atyap-Bajju","Fulani","Kanuri","Ham","Marghi", "Kagoro"],
+                "major_languages":["Hausa", "Gbagyi", "Adara", "Kagoro"],
+                "popular_dishes": ["Tuwo Shinkafa", "Miyan Kuka", "Kilishi"],
+                "image":{
+                    "flag_img": "N/A",
+                    "seal_img": "N/A",
+                    "map_img": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fe%2Fee%2FNigeria_-_Kaduna.svg&tbnid=DZMIrDyZ6QvRrM&vet=12ahUKEwioq_L19JX_AhUTrycCHTIMAvAQMygkegUIARCpAg..i&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ANigeria_-_Kaduna.svg&docid=6Tyhx-Y764dERM&w=954&h=734&q=kaduna%20map&ved=2ahUKEwioq_L19JX_AhUTrycCHTIMAvAQMygkegUIARCpAg"
+                },
+                "website": "http://www.kdsg.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Kano",
+            "lgas": [
+                "Ajingi",
+                "Albasu",
+                "Bagwai",
+                "Bebeji",
+                "Bichi",
+                "Bunkure",
+                "Dala",
+                "Dambatta",
+                "Dawakin-Kudu",
+                "Dawakin-Tofa",
+                "Doguwa",
+                "Fagge",
+                "Gabasawa",
+                "Garko",
+                "Garun-Mallam",
+                "Gaya",
+                "Gezawa",
+                "Gwale",
+                "Gwarzo",
+                "Kabo",
+                "Kano-Municipal",
+                "Karaye",
+                "Kibiya",
+                "Kiru",
+                "Kumbotso",
+                "Kunchi",
+                "Kura",
+                "Madobi",
+                "Makoda",
+                "Minjibir",
+                "Nasarawa",
+                "Rano",
+                "Rimin-Gado",
+                "Rogo",
+                "Shanono",
+                "Sumaila",
+                "Takai",
+                "Tarauni",
+                "Tofa",
+                "Tsanyawa",
+                "Tudun-Wada",
+                "Ungogo",
+                "Warawa",
+                "Wudil"
+            ],
+            "metadata": {
+                "capital":"Kano",
+                "other_cities": ["Kano metropolitan area"],
+                "lga_count": 44,
+                "region": "North West",
+                "state_border":["Katsina","Jigawa","Bauchi","Kaduna"],
+                "international_border": [],
+                "slogan": " Centre of Commerce",
+                "date_created": "27 May 1967",
+                "current_govenor": "Abdullahi Umar Ganduje",
+                "Area": "20,131 km2 (7,773 sq mi)",
+                "coordinates": "11°30′N 8°30′E",
+                "google_map_url": "https://www.google.com/maps/place/Kano,+Nigeria",
+                "population": 14253549,
+                "GDP_2021": {
+                    "total":"$27.17 billion",
+                    "per_capita": "$1,761"
+                },
+                "major_ethnic_groups": ["Hausa", "Fulani", "Gwari", "Bade-Bura"],
+                "major_languages": ["Hausa", "Fulfulde", "Gwari", "Bade"],
+                "popular_dishes": ["Tuwo Shinkafa", "Suya", "Masa"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Kano_State_flag_official.png",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Seal_of_Kano.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/0/02/Nigeria_-_Kano.svg"
+                },
+                "website": "https://www.kanostate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Katsina",
+            "lgas": [
+                "Bakori",
+                "Batagarawa",
+                "Batsari",
+                "Baure",
+                "Bindawa",
+                "Charanchi",
+                "Dan-Musa",
+                "Dandume",
+                "Danja",
+                "Daura",
+                "Dutsi",
+                "Dutsin-Ma",
+                "Faskari",
+                "Funtua",
+                "Ingawa",
+                "Jibia",
+                "Kafur",
+                "Kaita",
+                "Kankara",
+                "Kankia",
+                "Katsina",
+                "Kurfi",
+                "Kusada",
+                "Mai-Adua",
+                "Malumfashi",
+                "Mani",
+                "Mashi",
+                "Matazu",
+                "Musawa",
+                "Rimi",
+                "Sabuwa",
+                "Safana",
+                "Sandamu",
+                "Zango"
+            ],
+            "metadata": {
+                "capital":"Katsina",
+                "other_cities": ["Bakori", "Batagarawa", "Daura", "Jibia", "Funtua", "Kankia", "Zango"],
+                "lga_count": 34,
+                "region": "North West",
+                "state_border":["Kaduna","Zamfara","Kano","Jigawa"],
+                "international_border": ["Republic of Niger"],
+                "slogan": "State of Hospitality",
+                "date_created": "23 September 1987",
+                "current_govenor": "Aminu Bello Masari",
+                "Area": "24,192 km2 (9,341 sq mi)",
+                "coordinates": "12°15′N 7°30′E",
+                "google_map_url": "https://www.google.com/maps/place/Katsina,+Nigeria",
+                "population": 9300382,
+                "GDP_2021": {
+                    "total":"$21.47 billion",
+                    "per_capita": "$2,359"
+                },
+                "major_ethnic_groups": ["Hausa", "Fulani", "Arab", "Gobirawa"],
+                "major_languages": ["Hausa", "Fulfulde", "Arabic", "Gobirawa"],
+                "popular_dishes": ["Tuwo Shinkafa", "Danwake", "Fura da Nono"],
+                "image":{
+                    "flag_img": "N/A",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/en/e/e1/Seal_of_Katsina_State.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Nigeria_-_Katsina.svg"
+                },
+                "website": "http://www.katsinastate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Kebbi",
+            "lgas": [
+                "Aleiro",
+                "Arewa-Dandi",
+                "Argungu",
+                "Augie",
+                "Bagudo",
+                "Birnin-Kebbi",
+                "Bunza",
+                "Dandi",
+                "Fakai",
+                "Gwandu",
+                "Jega",
+                "Kalgo",
+                "Koko-Besse",
+                "Maiyama",
+                "Ngaski",
+                "Sakaba",
+                "Shanga",
+                "Suru",
+                "Wasagu/Danko",
+                "Yauri",
+                "Zuru"
+            ],
+            "metadata": {
+                "capital":"Birni Kebbi",
+                "other_cities": ["Gwandu","Argungu", "Yauri", "Zuru"],
+                "lga_count": 21,
+                "region": "North West",
+                "state_border":["Sokoto", "Zamfara","Niger"],
+                "international_border": ["Benin Republic", "Republic of Niger"],
+                "slogan": "Land of Equity",
+                "date_created": "27 August 1991",
+                "current_govenor": "Abubakar Atiku Bagudu",
+                "Area": "36,800 km2 (14,200 sq mi)",
+                "coordinates": "11°30′N 4°00′E",
+                "google_map_url": "https://www.google.com/maps/place/Kebbi,+Nigeria",
+                "population": 5001610,
+                "GDP_2021": {
+                    "total":"$3.29 billion",
+                    "per_capita": "$993"
+                },
+                "major_ethnic_groups": [ "Fulani", "Hausa","Zarma", "Boko-Bala", "Dendi", "Dukawa", "Kambari", "Kamuku", "Lela", "Puku","Shanga"],
+                "major_languages": ["Hausa", "Fulfulde","zarma","Lela", "Duka", "Gibanawa","Shanga", "Reshe"],
+                "popular_dishes": ["Tuwo Shinkafa", "Miyan Kuka", "Fura da Nono"],
+                "image":{
+                    "flag_img": "N/A",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Seal_of_Kebbi_State.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/5/51/Nigeria_Kebbi_State_map.png"
+                },
+                "website": "http://www.kebbistate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Sokoto",
+            "lgas": [
+                "Ardo-Kola",
+                "Bali",
+                "Donga",
+                "Gashaka",
+                "Gassol",
+                "Ibi",
+                "Jalingo",
+                "Karim-Lamido",
+                "Kurmi",
+                "Lau",
+                "Sardauna",
+                "Takum",
+                "Ussa",
+                "Wukari",
+                "Yorro",
+                "Zing"
+            ],
+            "metadata": {
+                "capital":"Sokoto",
+                "other_cities": ["Gwadabawa","Chimmola", "Tambagarka", "Asara", "Salame", "Gigane", "Mamman Suka", "Gidan Kaya"],
+                "lga_count": 23,
+                "region": "North West",
+                "state_border":["Niger","Zamfara","Kebbi"],
+                "international_border": ["Republic of Niger"],
+                "slogan": "Seat of the Caliphate",
+                "date_created": "3 February 1976",
+                "current_govenor": "Aminu Waziri Tambuwal",
+                "Area": "25,973 km2 (10,028 sq mi)",
+                "coordinates": "13°05′N 05°15′E",
+                "google_map_url": "https://www.google.com/maps/place/Sokoto,+Nigeria",
+                "population": 5863187,
+                "GDP_2021": {
+                    "total":"$18.44 billion",
+                    "per_capita": "$3,174"
+                },
+                "major_ethnic_groups": ["Hausa", "Fulani", "Gobirawa", "Zabarma"],
+                "major_languages": ["Hausa", "Fulfulde", " Ut-Ma'in" , "Kamuku", "Zarma", "Tuareg"],
+                "popular_dishes": ["Tuwo Shinkafa", "Fulani Suya", "Miyan Taushe"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/8/85/Sokoto_State_Flag.svg",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/en/b/bc/Seal_of_Sokoto_State.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Nigeria_-_Sokoto.svg"
+                },
+                "website": "N/A"
+                
+              }
+          },
+          {
+            "name": "Zamfara",
+            "lgas": [
+                "Anka",
+                "Bakura",
+                "Birnin Magaji/Kiyaw",
+                "Bukkuyum",
+                "Bungudu",
+                "Gummi",
+                "Gusau",
+                "Isa",
+                "Kaura-Namoda",
+                "Kiyawa",
+                "Maradun",
+                "Maru",
+                "Shinkafi",
+                "Talata-Mafara",
+                "Tsafe",
+                "Zurmi"
+            ],
+            "metadata": {
+                "capital":"Gusau",
+                "other_cities": ["Talata Mafara", "Gummi", "Bukkuyum", "Maradun", "Maru", "Birnin Magaji", "kiyaw", "Chafe"],
+                "lga_count": 14,
+                "region": "North West",
+                "state_border":["Kaduna","Katsina","Sokoto","Kebbi","Niger"],
+                "international_border": ["Republic of Niger"],
+                "slogan": "Farming is our pride",
+                "date_created": "1 October 1996",
+                "current_govenor": "Bello Matawalle",
+                "Area": "39,762 km2 (15,352 sq mi)",
+                "coordinates": "12°10′N 6°15′E",
+                "google_map_url": "https://www.google.com/maps/place/Zamfara,+Nigeria",
+                "population": 5317793,
+                "GDP_2021": {
+                    "total":"$11.18 billion",
+                    "per_capita": "$2,108"
+                },
+                "major_ethnic_groups": ["Hausa", "Fulani", "Zabarma", "Kamuku"],
+                "major_languages": ["Hausa", "Fulfulde", "Zabarma", "Kamuku"],
+                "popular_dishes":["Tuwo Shinkafa", "Suya", "Fura da Nono"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Zamfara_State_Flag.svg",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Seal_of_Zamfara_State_Government.jpg",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Nigeria_Zamfara_State_map.png"
+                },
+                "website": "N/A"
+                
+              }
+          }
+        ]
+      },
+      {
+        "name": "South East",
+        "states": [
+          {
+            "name": "Abia",
+            "lgas": [
+                "Aba North",
+                "Aba South",
+                "Arochukwu",
+                "Bende",
+                "Ikawuno",
+                "Ikwuano",
+                "Isiala-Ngwa North",
+                "Isiala-Ngwa South",
+                "Isuikwuato",
+                "Umu Nneochi",
+                "Obi Ngwa",
+                "Obioma Ngwa",
+                "Ohafia",
+                "Ohaozara",
+                "Osisioma",
+                "Ugwunagbo",
+                "Ukwa West",
+                "Ukwa East",
+                "Umuahia North",
+                "Umuahia South"
+            ],
+            "metadata": {
+                "capital":"Umuahia",
+                "other_cities": ["Aba","Ohafia", "Arochukwu", "Bende", "Isiala Ngwa"],
+                "lga_count": 17,
+                "region": "South East",
+                "state_border":["Enugu","Ebonyi","Imo", "Cross River","Akwa Ibom", "Rivers"],
+                "international_border": [],
+                "slogan": "God’s own State",
+                "date_created": "27 August 1991",
+                "current_govenor": "Okezie Ikpeazu",
+                "Area": "6,320 km2 (2,440 sq mi)",
+                "coordinates": "5°25′N 7°30′E",
+                "google_map_url": "https://www.google.com/maps/place/Abia,+Nigeria",
+                "population": 	4112230,
+                "GDP_2021": {
+                    "total":"$22.83 billion",
+                    "per_capita": "$5,351"
+                },
+                "major_ethnic_groups": ["Igbo"],
+                "major_languages": ["Igbo"],
+                "popular_dishes": ["Abacha", "Okpa", "Ofe Nsala"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Abia_State_Flag.gif",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Abia_State_Coat_of_Arms.gif",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/d/df/Nigeria_-_Abia.svg"
+                },
+                "website": "http://www.abiastate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Anambra",
+            "lgas": [
+                "Aguata",
+                "Anambra East",
+                "Anambra West",
+                "Anaocha",
+                "Awka North",
+                "Awka South",
+                "Ayamelum",
+                "Dunukofia",
+                "Ekwusigo",
+                "Idemili-North",
+                "Idemili-South",
+                "Ihiala",
+                "Njikoka",
+                "Nnewi-North",
+                "Nnewi-South",
+                "Ogbaru",
+                "Onitsha-North",
+                "Onitsha-South",
+                "Orumba-North",
+                "Orumba-South"
+            ],
+            "metadata": {
+                "capital":"Akwa",
+                "other_cities": ["Onitsha", "Nnewi"],
+                "lga_count":21,
+                "region": "South East",
+                "state_border":["Delta", "Imo","Enugu","Kogi"],
+                "international_border": [],
+                "slogan": "Light of the nation",
+                "date_created": "27 August 1991",
+                "current_govenor": "Charles Chukwuma Soludo",
+                "Area": "4,844 km2 (1,870 sq mi)",
+                "coordinates": "6°20′N 7°00′E",
+                "google_map_url": "https://www.google.com/maps/place/Anambra,+Nigeria",
+                "population": 5599910,
+                "GDP_2021": {
+                    "total":"$33.26 billion",
+                    "per_capita": "$5,231"
+                },
+                "major_ethnic_groups": ["Igbo"],
+                "major_languages": ["Igbo"],
+                "popular_dishes": ["Ofe Nsala", "Ugba na Okporoko", "Nkwobi"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Anambra_State.png",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/en/c/c8/Seal_of_Anambra_State.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Nigeria_-_Anambra.svg"
+                },
+                "website": "http://www.anambrastate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Ebonyi",
+            "lgas": [
+                "Abakaliki",
+                "Afikpo-North",
+                "Afikpo South (Edda)",
+                "Ebonyi",
+                "Ezza-North",
+                "Ezza-South",
+                "Ikwo",
+                "Ishielu",
+                "Ivo",
+                "Izzi",
+                "Ohaukwu",
+                "Onicha"
+            ],
+            "metadata": {
+                "capital":"Abakiliki",
+                "other_cities": ["Abakaliki", "Afikpo", "Onueke"],
+                "lga_count": 12,
+                "region": "South East",
+                "state_border":["Benue","Enugu","Cross River","Abia"],
+                "international_border": [],
+                "slogan": "The salt of the Nation",
+                "date_created": "1 October 1996",
+                "current_govenor": "Dave Umahi",
+                "Area": "5,533 km2 (2,136 sq mi)",
+                "coordinates": "6°15′N 8°05′E",
+                "google_map_url": "https://www.google.com/maps/place/Ebonyi,+Nigeria",
+                "population":  3007155,
+                "GDP_2021": {
+                    "total":"N/A",
+                    "per_capita": "N/A"
+                },
+                "major_ethnic_groups": ["Igbo"],
+                "major_languages": ["Igbo"],
+                "popular_dishes": ["Abacha", "Nkwobi", "Ugba na Okporoko"],
+                "image":{
+                    "flag_img": "N/A",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/en/5/5f/Seal_of_Ebonyi_State_of_Nigeria.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Nigeria_-_Ebonyi.svg"
+                },
+                "website": "http://www.ebonyistate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Enugu",
+            "lgas": [
+                "Aninri",
+                "Awgu",
+                "Enugu-East",
+                "Enugu-North",
+                "Enugu-South",
+                "Ezeagu",
+                "Igbo-Etiti",
+                "Igbo-Eze-North",
+                "Igbo-Eze-South",
+                "Isi-Uzo",
+                "Nkanu-East",
+                "Nkanu-West",
+                "Nsukka",
+                "Oji-River",
+                "Udenu",
+                "Udi",
+                "Uzo-Uwani"
+            ],
+            "metadata": {
+                "capital":"Enugu",
+                "other_cities": [ "Nsukka", "Agbani"],
+                "lga_count": 17,
+                "region": "South East",
+                "state_border":["Kogi", "Ebonyi","Abia","Anambra"],
+                "international_border": [],
+                "slogan": "Coal City State",
+                "date_created": "27 August 1991",
+                "current_govenor": "Ifeanyi Ugwuanyi",
+                "Area": "7,161 km2 (2,765 sq mi)",
+                "coordinates": "6°30′N 7°30′E",
+                "google_map_url": "https://www.google.com/maps/place/Enugu,+Nigeria",
+                "population": 4396098,
+                "GDP_2021": {
+                    "total":"$9.35 billion",
+                    "per_capita": "$1,802"
+                },
+                "major_ethnic_groups": ["Igbo"],
+                "major_languages": ["Igbo"],
+                "popular_dishes": ["Ofe Akwu", "Abacha", "Nsala Soup"],
+                "image":{
+                    "flag_img": "N/A",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Enugu_state_Coat_of_Arms.jpg",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Nigeria_-_Enugu.svg"
+                },
+                "website": "http://www.enugustate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Imo",
+            "lgas": [
+                "Aboh-Mbaise",
+                "Ahiazu-Mbaise",
+                "Ehime-Mbano",
+                "Ezinihitte",
+                "Ideato-North",
+                "Ideato-South",
+                "Ihitte/Uboma",
+                "Ikeduru",
+                "Isiala-Mbano",
+                "Isu",
+                "Mbaitoli",
+                "Ngor-Okpala",
+                "Njaba",
+                "Nkwerre",
+                "Nwangele",
+                "Obowo",
+                "Oguta",
+                "Ohaji-Egbema",
+                "Okigwe",
+                "Onuimo",
+                "Orlu",
+                "Orsu",
+                "Oru-East",
+                "Oru-West",
+                "Owerri-Municipal",
+                "Owerri-North",
+                "Owerri-West"
+            ],
+            "metadata": {
+                "capital":"Owerri",
+                "other_cities": ["Orlu", "Okigwe"],
+                "lga_count": 27,
+                "region": "South East",
+                "state_border":["Anambra","Rivers","Abia"],
+                "international_border": [],
+                "slogan": "Eastern heartland",
+                "date_created": "3 February 1976",
+                "current_govenor": "Hope Uzodimma",
+                "Area": "5,530 km2 (2,140 sq mi)",
+                "coordinates": "5°29′N 7°2′E",
+                "google_map_url": "https://www.google.com/maps/place/Imo,+Nigeria",
+                "population": 5167722,
+                "GDP_2021": {
+                    "total":"$49.69 billion",
+                    "per_capita": "$7,828"
+                },
+                "major_ethnic_groups": ["Igbo"],
+                "major_languages": ["Igbo"],
+                "popular_dishes": ["Ofe Owerri", "Abacha", "Nkwobi"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/1/15/Imo_State_Flag.svg",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Imo_State_Government.jpg",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Nigeria_-_Imo.svg"
+                },
+                "website": "N/A"
+                
+              }
+          }
+        ]
+      },
+      {
+        "name": "South South",
+        "states": [
+          {
+            "name": "Akwa Ibom",
+            "lgas": [
+                "Abak",
+                "Eastern-Obolo",
+                "Eket",
+                "Esit-Eket",
+                "Essien-Udim",
+                "Etim-Ekpo",
+                "Etinan",
+                "Ibeno",
+                "Ibesikpo-Asutan",
+                "Ibiono-Ibom",
+                "Ika",
+                "Ikono",
+                "Ikot-Abasi",
+                "Ikot-Ekpene",
+                "Ini",
+                "Itu",
+                "Mbo",
+                "Mkpat-Enin",
+                "Nsit-Atai",
+                "Nsit-Ibom",
+                "Nsit-Ubium",
+                "Obot-Akara",
+                "Okobo",
+                "Onna",
+                "Oron",
+                "Oruk Anam",
+                "Udung-Uko",
+                "Ukanafun",
+                "Urue-Offong/Oruko",
+                "Uruan",
+                "Uyo"
+            ],
+            "metadata": {
+                "capital":"Uyo",
+                "other_cities": ["Eket", "Ikot Ekpene"],
+                "lga_count": 31,
+                "region": "South South",
+                "state_border":["Cross River","Rivers","Abia"],
+                "international_border": [],
+                "slogan": "Land of promise",
+                "date_created": "23 September 1987",
+                "current_govenor": "Udom Gabriel Emmanuel",
+                "Area": "7,081 km2 (2,734 sq mi)",
+                "coordinates": "05°00′N 07°50′E",
+                "google_map_url": "https://www.google.com/maps/place/Akwa+Ibom,+Nigeria",
+                "population": 4780581,
+                "GDP_2021": {
+                    "total":"$50.30 billion",
+                    "per_capita": "$7,739"
+                },
+                "major_ethnic_groups": ["Ibibio", "Annang", "Oron"],
+                "major_languages": ["Ibibio", "Annang", "Oron"],
+                "popular_dishes": ["Edikang Ikong", "Atama Soup", "Afia Efere"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/4/44/The_Emblem_of_Akwa_Ibom_State.jpg",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Flag_of_Akwa_Ibom_State.svg",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Nigeria_-_Akwa_Ibom.svg"
+                },
+                "website": "http://akwaibomstate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Bayelsa",
+            "lgas": [
+                "Brass",
+                "Ekeremor",
+                "Kolokuma\/Opokuma",
+                "Nembe",
+                "Ogbia",
+                "Sagbama",
+                "Southern-Ijaw",
+                "Yenagoa"
+            ],
+            "metadata": {
+                "capital":"Yenagoa",
+                "other_cities": ["Amasoma", "Sagbama", "Obi", "Kauama", "Oloibiri", "Ogbia", "Oporama", "Koluama", "Brass","Opokuma"],
+                "lga_count": 8,
+                "region": "South South",
+                "state_border":["Delta", "Rivers"] ,
+                "international_border": [],
+                "slogan": "The Glory of All Lands",
+                "date_created": "1 October 1996",
+                "current_govenor": "Douye Diri",
+                "Area": "10,773 km2 (4,159 sq mi)",
+                "coordinates": "4°45′N 6°05′E",
+                "google_map_url": "https://www.google.com/maps/place/Bayelsa,+Nigeria",
+                "population": 2394725,
+                "GDP_2021": {
+                    "total":"$29.97 billion",
+                    "per_capita": "$11,379"
+                },
+                "major_ethnic_groups": ["Ijaw"],
+                "major_languages": ["Ijaw"],
+                "popular_dishes": ["Ogbolo", "Izon Ebi", "Pepper Soup"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Bayelsa_State.svg",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/en/8/8d/Seal_of_Bayelsa_State.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Nigeria_-_Bayelsa.svg"
+                },
+                "website": "N/A"
+                
+              }
+          },
+          {
+            "name": "Cross River",
+            "lgas": [
+                "Abi",
+                "Akamkpa",
+                "Akpabuyo",
+                "Bakassi",
+                "Bekwarra",
+                "Biase",
+                "Boki",
+                "Calabar-Municipal",
+                "Calabar-South",
+                "Etung",
+                "Ikom",
+                "Obanliku",
+                "Obubra",
+                "Obudu",
+                "Odukpani",
+                "Ogoja",
+                "Yakurr",
+                "Yala"
+            ],
+            "metadata": {
+                "capital":"Calabar",
+                "other_cities": ["Ugep", "Ogoja"],
+                "lga_count": 18,
+                "region": "South South",
+                "state_border":["Akwa Ibom", "Benue", "Ebonyi", "Abia"],
+                "international_border": ["Cameroon"],
+                "slogan": "The People's Paradise",
+                "date_created": "27 May 1967",
+                "current_govenor": "Benedict Ayade",
+                "Area": "20,156 km2 (7,782 sq mi)",
+                "coordinates": "5°45′N 8°30′E",
+                "google_map_url": "https://www.google.com/maps/place/Cross+River,+Nigeria",
+                "population": 4175020,
+                "GDP_2021": {
+                    "total":"$26.33 billion",
+                    "per_capita": "$5,892"
+                },
+                "major_ethnic_groups": ["Efik", "Bekwarra", "Yakurr", "Boki", "Obubra"],
+                "major_languages": ["Efik", "Bekwarra", "Yakurr", "Boki", "Obubra"],
+                "popular_dishes": ["Edikang Ikong", "Afang Soup", "Ekpang Nkukwo"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/8/83/Cross_River_State_Flag.svg",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/7/76/Coat_of_arms_state_Cross_River.jpg",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Nigeria_-_Cross_River.svg"
+                },
+                "website": "https://crossriverhub.ng/"
+                
+              }
+          },
+          {
+            "name": "Delta",
+            "lgas": [
+                "Aniocha North",
+                "Aniocha-North",
+                "Aniocha-South",
+                "Bomadi",
+                "Burutu",
+                "Ethiope-East",
+                "Ethiope-West",
+                "Ika-North-East",
+                "Ika-South",
+                "Isoko-North",
+                "Isoko-South",
+                "Ndokwa-East",
+                "Ndokwa-West",
+                "Okpe",
+                "Oshimili-North",
+                "Oshimili-South",
+                "Patani",
+                "Sapele",
+                "Udu",
+                "Ughelli-North",
+                "Ughelli-South",
+                "Ukwuani",
+                "Uvwie",
+                "Warri South-West",
+                "Warri North",
+                "Warri South"
+            ],
+            "metadata": {
+                "capital":"Asaba",
+                "other_cities": ["Igbuzo", "Warri", "Ozoro", "Illah", "Osubi", "Aboh","Obiaruku", "Sapele", "Otor-Udu"],
+                "lga_count": 25,
+                "region": "South South",
+                "state_border":["Edo", "Anambra", "Rivers", "Bayelsa"],
+                "international_border": [],
+                "slogan": "The Finger of God",
+                "date_created": "27 August 1991",
+                "current_govenor": "Ifeanyi Okowa",
+                "Area": "17,698 km2 (6,833 sq mi)",
+                "coordinates": "5°30′N 6°00′E",
+                "google_map_url": "https://www.google.com/maps/place/Delta,+Nigeria",
+                "population": 5307543,
+                "GDP_2021": {
+                    "total":"$40.05 billion",
+                    "per_capita": "$6,025"
+                },
+                "major_ethnic_groups": ["Urhobo", "Itsekiri", "Ijaw", "Isoko", "Anioma"],
+                "major_languages": ["Urhobo", "Itsekiri", "Ijaw", "Isoko", "Anioma"],
+                "popular_dishes": ["Ogbono Soup", "Banga Soup", "Ukodo", "Owo Soup"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Delta_State_Flag.gif",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/en/d/d6/Seal_of_delta_State.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Nigeria_-_Delta.svg"
+                },
+                "website": "http://www.deltastate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Edo",
+            "lgas": [
+                "Akoko Edo",
+                "Egor",
+                "Esan-Central",
+                "Esan-North-East",
+                "Esan-South-East",
+                "Esan-West",
+                "Etsako-Central",
+                "Etsako-East",
+                "Etsako-West",
+                "Igueben",
+                "Ikpoba-Okha",
+                "Oredo",
+                "Orhionmwon",
+                "Ovia-North-East",
+                "Ovia-South-West",
+                "Owan East",
+                "Owan-West",
+                "Uhunmwonde"
+            ],
+            "metadata": {
+                "capital":"Benin City",
+                "other_cities": [ "Igueben" , "Ososo", "Uromi", "Agenebode", "Ughoton", "Jattu", "Uzebba", "Esan North-East", "Auchi", "Ekpoma"],
+                "lga_count": 18,
+                "region": "South South",
+                "state_border":["Kogi","Anambra","Delta", "Ondo"],
+                "international_border": [],
+                "slogan": "The Heart Beat of the Nation",
+                "date_created": "27 August 1991",
+                "current_govenor": "Godwin Obaseki",
+                "Area": "",
+                "coordinates": "6°30′N 6°00′E",
+                "google_map_url": "https://www.google.com/maps/place/Edo,+Nigeria",
+                "population": 4461137,
+                "GDP_2021": {
+                    "total":"$25.81 billion",
+                    "per_capita": "$5,325"
+                },
+                "major_ethnic_groups": ["Bini", "Esan", "Etsako", "Owan"],
+                "major_languages": ["Bini", "Esan", "Etsako", "Owan"],
+                "popular_dishes": ["Banga Soup", "Owo Soup", "Ekpang Nkukwo"],
+                "image":{
+                    "flag_img": "N/A",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Seal_of_Edo_State.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/5/54/Nigeria_-_Edo.svg"
+                },
+                "website": "http://www.edostate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Rivers",
+            "lgas": [
+                "Abua-Odual",
+                "Ahoada-East",
+                "Ahoada-West",
+                "Akuku Toru",
+                "Andoni",
+                "Asari-Toru",
+                "Bonny",
+                "Degema",
+                "Eleme",
+                "Emuoha",
+                "Etche",
+                "Gokana",
+                "Ikwerre",
+                "Khana",
+                "Obio-Akpor",
+                "Ogba-Egbema-Ndoni",
+                "Ogba-Egbema-Ndoni",
+                "Ogu-Bolo",
+                "Okrika",
+                "Omuma",
+                "Opobo-Nkoro",
+                "Oyigbo",
+                "Port Harcourt",
+                "Tai"
+            ],
+            "metadata": {
+                "capital":"Port Harcourt",
+                "other_cities": ["Obio-Akpor", "Bonny"],
+                "lga_count": 23,
+                "region": "South South",
+                "state_border":["Imo","Abia","Akwa Ibom","Bayelsa","Delta"],
+                "international_border": [],
+                "slogan": "Treasure base of the Nation",
+                "date_created": "27 May 1967",
+                "current_govenor": "Ezenwo Nyesom Wike",
+                "Area": "11,077 km2 (4,277 sq mi)",
+                "coordinates": "4°45′N 6°50′E",
+                "google_map_url": "https://www.google.com/maps/place/Rivers,+Nigeria",
+                "population": 7034973,
+                "GDP_2021": {
+                    "total":"$51.529 billion",
+                    "per_capita": "$5,949"
+                },
+                "major_ethnic_groups":  ["Ikwerre", "Ogoni", "Kalabari", "Ijaw", "Etche"],
+                "major_languages":  ["Ikwerre", "Ogoni", "Kalabari", "Ijaw", "Etche"],
+                "popular_dishes": ["Ogbono Soup", "Banga Soup", "Boli and Fish"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Rivers_State_Flag.svg",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/en/6/65/Government_of_Rivers_State_logo.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Nigeria_-_Rivers.svg"
+                },
+                "website": "http://www.riversstate.gov.ng/"
+                
+              }
+          }
+        ]
+      },
+      {
+        "name": "South West",
+        "states": [
+          {
+            "name": "Ekiti",
+            "lgas": [
+                "Ado-Ekiti",
+                "Efon",
+                "Ekiti-East",
+                "Ekiti-South-West",
+                "Ekiti-West",
+                "Emure",
+                "Gbonyin",
+                "Ido-Osi",
+                "Ijero",
+                "Ikere",
+                "Ikole",
+                "Ilejemeje",
+                "Irepodun/Ifelodun",
+                "Ise-Orun",
+                "Moba",
+                "Oye"
+            ],
+            "metadata": {
+                "capital":"Ado-Ekiti",
+                "other_cities": ["Ikere-Ekiti", "Ijero-Ekiti"],
+                "lga_count": 16,
+                "region": "South West",
+                "state_border":["Kwara","Ondo","Osun"],
+                "international_border": [],
+                "slogan": "The Heart Beat of the Nation",
+                "date_created": "1 October 1996",
+                "current_govenor": "Godwin Obaseki",
+                "Area": "6,353 km2 (2,453 sq mi)",
+                "coordinates": "7°40′N 5°15′E",
+                "google_map_url": "https://www.google.com/maps/place/Ekiti,+Nigeria",
+                "population": 3350401,
+                "GDP_2021": {
+                    "total":"$15.20 billion",
+                    "per_capita": "$3,979"
+                },
+                "major_ethnic_groups": ["Yoruba"],
+                "major_languages": ["Yoruba"],
+                "popular_dishes":  ["Amala and Ewedu Soup", "Ikokore", "Gbegiri Soup"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/0/02/Ekiti_State_Flag.gif",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/en/5/53/Seal_of_Ekiti_State.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/6/66/Nigeria_-_Ekiti.svg"
+                },
+                "website": "N/A"
+                
+              }
+          },
+          {
+            "name": "Lagos",
+            "lgas": [
+                "Agege",
+                "Ajeromi-Ifelodun",
+                "Alimosho",
+                "Amuwo-Odofin",
+                "Apapa",
+                "Badagry",
+                "Epe",
+                "Eti-Osa",
+                "Ibeju-Lekki",
+                "Ifako-Ijaiye",
+                "Ikeja",
+                "Ikorodu",
+                "Kosofe",
+                "Lagos-Island",
+                "Lagos-Mainland",
+                "Mushin",
+                "Ojo",
+                "Oshodi-Isolo",
+                "Shomolu",
+                "Surulere",
+                "Yewa-South"
+            ],
+            "metadata": {
+                "capital":"Ikeja",
+                "other_cities": ["Lagos Island", "Badagry"],
+                "lga_count": 16,
+                "region": "South West",
+                "state_border":["Ogun", "Ondo","Edo" ],
+                "international_border": [],
+                "slogan": "The state of Harmony",
+                "date_created": "May 27, 1967",
+                "current_govenor": "Babajide Sanwo-Olu",
+                "Area": "3,345 km2 (1,292 sq mi)",
+                "coordinates": "6.455027°N 3.384082°E",
+                "google_map_url": "https://www.google.com/maps/place/Lagos,+Nigeria",
+                "population": 16437435,
+                "GDP_2021": {
+                    "total":"N/A",
+                    "per_capita": "N/A"
+                },
+                "major_ethnic_groups": ["Yoruba", "Igbo", "Hausa", "Egun"],
+                "major_languages": ["Yoruba", "English"],
+                "popular_dishes": ["Jollof Rice", "Ewa Agoyin", "Pounded Yam and Egusi Soup"],
+                "image":{
+                    "flag_img": "N/A",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/en/5/5f/Seal_of_Ebonyi_State_of_Nigeria.png"    ,
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/9/98/Lagos_Map.PNG"
+                },
+                "website": " http://www.lagosstate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Ogun",
+            "lgas": [
+                "Abeokuta North",
+                "Abeokuta South",
+                "Ado-Odo/Ota",
+                "Ewekoro",
+                "Ifo",
+                "Ijebu East",
+                "Ijebu North",
+                "Ijebu North East",
+                "Ijebu Ode",
+                "Ikenne",
+                "Imeko Afon",
+                "Ipokia",
+                "Obafemi Owode",
+                "Odeda",
+                "Odogbolu",
+                "Ogun Waterside",
+                "Remo North",
+                "Sagamu",
+                "Yewa North",
+                "Yewa South"
+            ],
+            "metadata": {
+                "capital":"Abeokuta",
+                "other_cities": ["Ijebu Ode","Sagamu" ],
+                "lga_count": 20,
+                "region": "South West",
+                "state_border":["Lagos", "Oyo","Osun","Ondo"],
+                "international_border": ["Benin Republic"],
+                "slogan": "The Gateway State",
+                "date_created": "3 February 1976",
+                "current_govenor": "Dapo Abiodun",
+                "Area": "16,980.55 km2 (6,556.23 sq mi)",
+                "coordinates": "7°00′N 3°35′E",
+                "google_map_url": "https://www.google.com/maps/place/Ogun,+Nigeria",
+                "population": 5945275,
+                "GDP_2021": {
+                    "total":"$32.55 billion",
+                    "per_capita": "$5,288"
+                },
+                "major_ethnic_groups": ["Yoruba", "Egba", "Awori", "Ijebu"],
+                "major_languages": ["Yoruba", "English"],
+                "popular_dishes": ["Amala and Ewedu Soup", "Ogun Eja", "Gbegiri and Ewedu"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Ogun_State_Flag.jpg",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/en/1/1a/Seal_of_Ogun_State.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/1/19/Nigeria_-_Ogun.svg"
+                },
+                "website": "http://www.ogunstate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Ondo",
+            "lgas": [
+                "Akoko North-East",
+                "Akoko North-West",
+                "Akoko South-West",
+                "Akoko South-East",
+                "Akure-North",
+                "Akure-South",
+                "Ese-Odo",
+                "Idanre",
+                "Ifedore",
+                "Ilaje",
+                "Ile-Oluji-Okeigbo",
+                "Irele",
+                "Odigbo",
+                "Okitipupa",
+                "Ondo West",
+                "Ondo-East",
+                "Ose",
+                "Owo"
+            ],
+            "metadata": {
+                "capital":"Akure",
+                "other_cities": [ "Ondo", "Owo"],
+                "lga_count": 18,
+                "region": "South West",
+                "state_border":["Ekiti","Kogi","Edo","Delta","Ogun"],
+                "international_border": [],
+                "slogan": "The Sunshine State",
+                "date_created": "3 February 1976",
+                "current_govenor": "Rotimi Akeredolu",
+                "Area": "15,500 km2 (6,000 sq mi)",
+                "coordinates": "7°10′N 5°05′E",
+                "google_map_url": "https://www.google.com/maps/place/Ondo,+Nigeria",
+                "population": 4969707,
+                "GDP_2021": {
+                    "total":"$33.00 billion",
+                    "per_capita": "$6,077"
+                },
+                "major_ethnic_groups": ["Yoruba", "Ikale", "Ilaje", "Owo"],
+                "major_languages": ["Yoruba", "English"],
+                "popular_dishes": ["Iyan and Egusi Soup", "Obe Ata", "Ogbono Soup"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Ondo_State_Flag.jpg",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Seal_of_Ondo_State.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Nigeria_-_Ondo.svg"
+                },
+                "website": " http://ondostate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Osun",
+            "lgas": [
+                "Atakumosa West",
+                "Atakumosa East",
+                "Ayedaade",
+                "Ayedire",
+                "Boluwaduro",
+                "Boripe",
+                "Ede South",
+                "Ede North",
+                "Egbedore",
+                "Ejigbo",
+                "Ife North",
+                "Ife South",
+                "Ife-Central",
+                "Ife-East",
+                "Ifelodun",
+                "Ila",
+                "Ilesa-East",
+                "Ilesa-West",
+                "Irepodun",
+                "Irewole",
+                "Isokan",
+                "Iwo",
+                "Obokun",
+                "Odo-Otin",
+                "Ola Oluwa",
+                "Olorunda",
+                "Oriade",
+                "Orolu",
+                "Osogbo"
+            ],
+            "metadata": {
+                "capital":"Osogbo",
+                "other_cities": [ "Ilesa", "Ife"],
+                "lga_count": 30,
+                "region": "South West",
+                "state_border":["Ekiti","Ondo","Kwara","Ogun","Oyo"],
+                "international_border": [],
+                "slogan": "Land of virtue",
+                "date_created": "27 August 1991",
+                "current_govenor": "Isiaka Adegboyega Oyetola",
+                "Area": "9,251 km2 (3,572 sq mi)",
+                "coordinates": "07°30′N 4°30′E",
+                "google_map_url": "https://www.google.com/maps/place/Osun,+Nigeria",
+                "population": 4237396,
+                "GDP_2021": {
+                    "total":"$14.86 billion",
+                    "per_capita": "$2,691"
+                },
+                "major_ethnic_groups": ["Yoruba", "Ijesha", "Oyo", "Ife"],
+                "major_languages": ["Yoruba", "English"],
+                "popular_dishes": ["Amala and Ewedu Soup", "Pounded Yam and Egusi Soup", "Ofada Rice"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Osun_State%2C_Nigeria.svg",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/en/d/dc/Seal_of_Osun_State.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/8/88/Nigeria_-_Osun.svg"
+                },
+                "website": "https://www.osunstate.gov.ng/"
+                
+              }
+          },
+          {
+            "name": "Oyo",
+            "lgas": [
+                "Afijio",
+                "Akinyele",
+                "Atiba",
+                "Atisbo",
+                "Egbeda",
+                "Ibadan North",
+                "Ibadan North-East",
+                "Ibadan North-West",
+                "Ibadan South-East",
+                "Ibadan South-West",
+                "Ibarapa-Central",
+                "Ibarapa-East",
+                "Ibarapa-North",
+                "Ido",
+                "Ifedayo",
+                "Irepo",
+                "Iseyin",
+                "Itesiwaju",
+                "Iwajowa",
+                "Kajola",
+                "Lagelu",
+                "Ogo-Oluwa",
+                "Ogbomosho-North",
+                "Ogbomosho-South",
+                "Olorunsogo",
+                "Oluyole",
+                "Ona-Ara",
+                "Orelope",
+                "Ori-Ire",
+                "Oyo-West",
+                "Oyo-East",
+                "Saki-East",
+                "Saki-West",
+                "Surulere"
+            ],
+            "metadata": {
+                "capital": "Ibadan",
+                "other_cities": [ "Ogbomoso", "Iseyin"],
+                "lga_count":33,
+                "region": "South West",
+                "state_border":["Kwara","Osun","Ogun"],
+                "international_border": ["Benin Republic"],
+                "slogan": "The pacesetter State",
+                "date_created": "3 February 1976",
+                "current_govenor": "Seyi Makinde",
+                "Area": "28,454 km2 (10,986 sq mi)",
+                "coordinates": "8°00′N 4°00′E",
+                "google_map_url": "https://www.google.com/maps/place/Oyo,+Nigeria",
+                "population": 7512855,
+                "GDP_2021": {
+                    "total":"$23.8 billion",
+                    "per_capita": "$2,560"
+                },
+                "major_ethnic_groups": ["Yoruba", "Ibadan", "Oyo", "Ogbomoso"],
+                "major_languages": ["Yoruba", "English"],
+                "popular_dishes": ["Amala and Ewedu Soup", "Pounded Yam and Egusi Soup", "Ogbomoso Bread"],
+                "image":{
+                    "flag_img": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Oyo_State_Flag.svg",
+                    "seal_img": "https://upload.wikimedia.org/wikipedia/commons/8/85/Oyo_State_Coat_of_Arms.png",
+                    "map_img": "https://upload.wikimedia.org/wikipedia/commons/0/00/Nigeria_-_Oyo.svg"
+                },
+                "website": "http://www.oyostate.gov.ng/"
+                
+              }
+          }
+        ]
+      }
+    ]
+  }
+  

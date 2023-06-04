@@ -1,9 +1,9 @@
-const mongooose = require("mongoose");
+const mongoose = require("mongoose");
 const bcrypt = require('bcrypt');
 const jwt = require("jsonwebtoken");
 const CONFIG = require("../CONFIG/env.config");
 
-const userSchema = new mongooose.Schema({
+const userSchema = new mongoose.Schema({
     username: {
         type : String,
         required :[ true, "Provide your username"],
@@ -25,6 +25,9 @@ const userSchema = new mongooose.Schema({
         type: String,
         required :[ true, "Provide your Password"],
         minlength: [6, 'Password is too short']
+    },
+    apiKey: {
+        type: String
     }
 })
 
@@ -37,20 +40,20 @@ userSchema.pre('save', async function(next) {
 })
 
 
-userSchema.methods.generateJWT= function () {
-    return jwt.sign( {userId: this._id, username:this.username, email: this.email},
-        CONFIG.jwt_secret, 
-        // {
-        //     expiresIn : CONFIG.jwt_lifetime || '5h'
-        // }
+// userSchema.methods.generateJWT= function () {
+//     return jwt.sign( {userId: this._id, username:this.username, email: this.email},
+//         CONFIG.jwt_secret, 
+//         {
+//             expiresIn : CONFIG.jwt_lifetime || '5h'
+//         }
         
-        )
-}
+//         )
+// }
 
 
 userSchema.methods.isPasswordValid = async function (password){
     return await bcrypt.compare( password, this.password)
 }
 
-const User = mongooose.model("User", userSchema);
+const User = mongoose.model("User", userSchema);
 module.exports = User;
