@@ -1,12 +1,18 @@
 const NaijaData = require("../model/naija.model");
+const Cache = require("../CONFIG/redis.config");
+const CONFIG = require("../CONFIG/env.config");
 
 //function to get full Json file of Nigeria regions, states,lgas and metadata
-const getData =  async( req, res, searchFunc) =>{
+const getData =  async( req, res) =>{
     try{
+        
          const nigeriaData = await NaijaData.find({});
          if(!nigeriaData){
             return res.status(404).json({ message : "file not found!"});
          }   
+           //set cache
+           const  cacheKey = req.originalUrl.toLowerCase();
+            Cache.redis.SETEX(cacheKey, 3600, JSON.stringify(nigeriaData));
             res.status(200).json({nigeriaData})
     } 
     catch (error) {
@@ -23,6 +29,9 @@ const getRegions = async(req, res) =>{
             return res.status(404).json({ message : "file not found!"});
          }
          const region = nigeriaData.map((region) => region.name);
+         //set cache
+         const  cacheKey = req.originalUrl.toLowerCase();
+         Cache.redis.SETEX(cacheKey, 3600, JSON.stringify(region));
          res.status(200).json(region);
 
     }
@@ -47,7 +56,9 @@ const getStates = async(req, res) =>{
             if(states){          
               statesResult = states.flat();
           }
-
+           //set cache
+         const  cacheKey = req.originalUrl.toLowerCase();
+         Cache.redis.SETEX(cacheKey, 3600, JSON.stringify(statesResult));
          res.status(200).json(statesResult);
     }
     catch (error) {
@@ -72,7 +83,10 @@ const getRegionState =  async(req, res) => {
               )
             }
         }))
-  
+        //set cache
+        const  cacheKey = req.originalUrl.toLowerCase();
+        Cache.redis.SETEX(cacheKey, 3600, JSON.stringify(regionState));
+
         res.status(200).json(regionState)
      } catch (error) {
       console.error(error)
@@ -96,6 +110,10 @@ const getStateLga =  async( req, res) =>{
               }  
             }))
         }
+        //set cache
+        const  cacheKey = req.originalUrl.toLowerCase();
+        Cache.redis.SETEX(cacheKey, 3600, JSON.stringify(stateLga));
+
         res.status(200).json(stateLga);
         
       } catch (error) {
@@ -120,6 +138,10 @@ const getStateMetadata =  async( req, res) =>{
               }  
             }))
         }
+        //set cache
+        const  cacheKey = req.originalUrl.toLowerCase();
+        Cache.redis.SETEX(cacheKey, 3600, JSON.stringify(stateMetadata));
+
         res.status(200).json(stateMetadata);
         
       } catch (error) {
@@ -132,6 +154,7 @@ const getStateMetadata =  async( req, res) =>{
 //Query for a Region
 const getOneRegion = async( req, res) =>{
     const  regionName = req.params.regionName;
+    
     if(!regionName){
         res.status(400).json({message: `Invalid Input`})
     }
@@ -140,6 +163,10 @@ const getOneRegion = async( req, res) =>{
       if(!data){
         return res.status(404).json({message : `file Not found!`})
       }
+      //set cache
+      const  cacheKey = req.originalUrl.toLowerCase();
+      Cache.redis.SETEX(cacheKey, 3600, JSON.stringify(data));
+
         res.status(200).json(data);
    } catch (error) {
     console.error(error)
@@ -173,10 +200,17 @@ const getOneState = async( req, res) =>{
      }
  for(let i = 0; i < statesResult.length; i++){
       if( statesResult[i].state == stateName ){
+        
+        const data = statesResult[i]
+
+        //set cache
+        const  cacheKey = req.originalUrl.toLowerCase();
+        Cache.redis.SETEX(cacheKey, 3600, JSON.stringify(data));
          return res.status(200).json(statesResult[i]);
       }
- }     
- }
+    }     
+    return res.status(404).json({messsage: 'InCorrect Entry! Please try Again'})
+}
  catch (error) {
      console.error({error : error.message});
  }

@@ -21,9 +21,6 @@ const registerUser = async(req, res, next) => {
             apiKey: uuidv4()
           })
 
-         
-          //create 
-        //   const token = await user.generateJWT();
          await user.save();
          res.status(201).send({
             success: true,
@@ -35,7 +32,6 @@ const registerUser = async(req, res, next) => {
                 apiKey: user.apiKey
                 // token
             }
-
          })
     } catch (error) {
          next( error)
