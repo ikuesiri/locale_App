@@ -1,17 +1,29 @@
 const User = require("../model/auth.model");
 const { v4: uuidv4 } = require('uuid');
+const asyncHandler = require('../utils/middlewares/AsyncHandler');
+const CustomError = require("../utils/error/customError");
+
 
 // Registration
-const registerUser = async(req, res, next) => {
-    const { username, email, password} = req.body
-    if( !username || !email   || ! password){
-        res.status(400).send({message: `incomplete details, fill in all your details`})
-    }
+exports.registerUser = asyncHandler( async(req, res, next) => {
+    const {
+        username,
+        email, 
+        password} = req.body
 
-    try {
-          const alreadyExist = await User.findOne({ email});
-          if(alreadyExist){
-             return res.status(401).send({ errorMessage: "Email already Exist, Please try with a new email"})
+    if( !username || !email   || ! password){
+        // return res.status(400).send({message: `incomplete details, fill in all your details`})
+
+        const error = new CustomError("incomplete details, fill in all your details", 400);
+        return next(error); 
+       
+       
+    }
+        const alreadyExist = await User.findOne({ email});
+        if(alreadyExist){
+             const error = new CustomError("Email already Exist, Please try with a new email", 401);
+            return next(error);
+       
           }
          
           const user = new User ({
@@ -19,55 +31,45 @@ const registerUser = async(req, res, next) => {
             email,
             password,
             apiKey: uuidv4()
-          })
+          });
 
          await user.save();
          res.status(201).send({
             success: true,
-            message: "Registration completed!!!, Make sure you keep your API KEY  Safe!",
+            message: "Registration completed!!!, Make sure you keep your API KEY Safe!",
             user: {
                 id:user._id,
                 username: user.username,
                 email: user.email,
                 apiKey: user.apiKey
-                // token
             }
          })
-    } catch (error) {
-         next( error)
-    }
-
-}
-
+  
+})
 
 //Login
 
-const login = async( req, res, next ) => {
+exports.login = asyncHandler( async( req, res, next ) => {
     const { email, password } = req.body;
 
     if( !email || !password){
-        return res.status(400).send({
-            success: false,
-            errorMessage: `Enter your Email and Password details`
-        })
+       
+        const error = new CustomError("incomplete details, enter all fields", 400);
+        return next(error); 
     }
      
-    try {
         const user  = await  User.findOne({ email })
 
         if(!user){
-            return res.status(401).send({
-                success: false,
-                errorMessage: `Invalid Information. Enter a registered email`
-            })
+            const error = new CustomError("Invalid Information. Enter a registered email", 401);
+            return next(error);
         }
         
         const passwordValidation = await user.isPasswordValid(password);
         if(!passwordValidation){
-            return res.status(401).send({
-                success: false,
-                errorMessage: `Incorrect password!`
-            })
+            
+            const error = new CustomError("Incorrect password!", 401);
+            return next(error);
         }
 
         return res.status(200).send({
@@ -75,12 +77,4 @@ const login = async( req, res, next ) => {
             message: "login Successful"
         })
 
-    } catch (error) {
-        next(error)
-    }
-}
-
-module.exports = {
-    registerUser,
-    login
-}
+})

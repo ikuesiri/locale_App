@@ -1,16 +1,13 @@
 const Redis = require('redis');
 const CONFIG = require("./env.config");
-
 class Cache{
     constructor() {
         this.redis = null
     }
-
     async connect(){
         try {
              this.redis = await Redis.createClient({
-               url : CONFIG.redis_url
-               
+               url : CONFIG.redis_url             
              });
              this.redis.connect()
              this.redis.on("connect", ()=> console.log('redis connected'))

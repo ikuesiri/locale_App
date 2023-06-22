@@ -8,10 +8,7 @@ const naijaSchema =  new mongoose.Schema({
         lgas: [String],
         metadata: mongoose.Schema.Types.Mixed
 }
-]
-
-    
-    
+]      
 })
 
 const NaijaData = mongoose.model("NaijaData", naijaSchema);

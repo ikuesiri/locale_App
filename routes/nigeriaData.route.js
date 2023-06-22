@@ -1,7 +1,7 @@
 const express = require("express");
 const router =  express.Router();
-const cacheMiddleware = require("../utils/cache.middleware")
-const validateApiKey = require("../utils/authMiddleWare");
+const cacheMiddleware = require("../utils/middlewares/cache.middleware")
+const validateApiKey = require("../utils/middlewares/authMiddleWare");
 const { 
     getData,
     getRegions,
@@ -14,15 +14,10 @@ const {
  } = require("../controllers/nigeriaData.controller")
 
 
-// router.get("/regions", nigeriaRegions);
-// router.get("/states", nigeriaStates);
-
-
-// mapRouter.get("/lga", nigeriaLga );
-
 //@Desc full search ( region-states-lga-metadata)
 // url path '/search'
-router.get("/",  validateApiKey,cacheMiddleware, getData);
+// router.get("/",  validateApiKey,cacheMiddleware, getData);
+router.get("/", validateApiKey, getData);
 
 //@Desc search for regions Only
 // url path '/search/regions'
