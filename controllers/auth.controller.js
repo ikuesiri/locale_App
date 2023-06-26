@@ -1,7 +1,7 @@
-const User = require("../model/auth.model");
-const { v4: uuidv4 } = require('uuid');
-const asyncHandler = require('../utils/middlewares/AsyncHandler');
-const CustomError = require("../utils/error/customError");
+const User = require("../model/auth.model")
+const {v4 : uuidv4 }  = require ('uuid')
+const asyncHandler  = require ('../utils/middlewares/AsyncHandler')
+const CustomError  = require ("../utils/error/customError")
 
 
 // Registration
@@ -44,7 +44,6 @@ exports.registerUser = asyncHandler( async(req, res, next) => {
                 apiKey: user.apiKey
             }
          })
-  
 })
 
 //Login

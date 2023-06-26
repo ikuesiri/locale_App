@@ -1,38 +1,43 @@
-const NaijaData = require("../model/naija.model");
-const Cache = require("../utils/CONFIG/redis.config");
-const asyncHandler = require("../utils/middlewares/AsyncHandler");
-const CustomError = require("../utils/error/customError");
+const NaijaData = require("../model/naija.model")
+const cacheInstance = require("../utils/CONFIG/redis.config")
+const asyncHandler = require("../utils/middlewares/AsyncHandler")
+const CustomError = require("../utils/error/customError")
+require("dotenv").config()
 
 //function to get full Json file of Nigeria regions, states,lgas and metadata
 exports.getData =  asyncHandler( async(req, res, next) =>{
 
-         const nigeriaData = await NaijaData.find({}); 
+         const nigeriaData = await NaijaData.find(); 
+         if(process.env.NODE_ENV !== 'test'){
            //set cache
-           const  cacheKey = req.originalUrl.toLowerCase();
-            // Cache.redis.SETEX(cacheKey, 3600, JSON.stringify(nigeriaData));
-            res.status(200).json({nigeriaData})
+              const  cacheKey = req.originalUrl.toLowerCase();
+              cacheInstance.redis.SETEX(cacheKey, 3600, JSON.stringify(nigeriaData));
+         }
+            res.status(200).json(nigeriaData)
    
 })
 
 //function to get  Nigeria regions ONLY
 exports.getRegions = asyncHandler( async(req, res, next) =>{
 
-  const nigeriaData = await NaijaData.find({});
+  const nigeriaData = await NaijaData.find();
          if(!nigeriaData){
             const error = new CustomError("file not found!", 404);
             return next(error);
          }
          const region = nigeriaData.map((region) => region.name);
-         //set cache
-         const  cacheKey = req.originalUrl.toLowerCase();
-         Cache.redis.SETEX(cacheKey, 3600, JSON.stringify(region));
+         if(process.env.NODE_ENV !== 'test'){
+            //set cache
+            const  cacheKey = req.originalUrl.toLowerCase();
+           cacheInstance.redis.SETEX(cacheKey, 3600, JSON.stringify(region));
+         }
          res.status(200).json(region);
 })
 
 //function to get  Nigeria States ONLY
 
 exports.getStates = asyncHandler( async(req, res, next) =>{
-        const nigeriaData = await NaijaData.find({});
+        const nigeriaData = await NaijaData.find();
          if(!nigeriaData){
             const error = new CustomError("file not found!", 404);
             return next(error);
@@ -45,16 +50,18 @@ exports.getStates = asyncHandler( async(req, res, next) =>{
             if(states){          
               statesResult = states.flat();
           }
+          if(process.env.NODE_ENV !== 'test'){
            //set cache
          const  cacheKey = req.originalUrl.toLowerCase();
-         Cache.redis.SETEX(cacheKey, 3600, JSON.stringify(statesResult));
+        cacheInstance.redis.SETEX(cacheKey, 3600, JSON.stringify(statesResult));
+          }
          res.status(200).json(statesResult);
 })
 
 //function to get  Nigeria Regions and corresponding States ONLY
 
 exports.getRegionState =  asyncHandler( async(req, res, next) => {
-         const nigeriaData = await NaijaData.find({});
+         const nigeriaData = await NaijaData.find();
          if(!nigeriaData){
             const error = new CustomError("file not found!", 404);
             return next(error);
@@ -66,16 +73,18 @@ exports.getRegionState =  asyncHandler( async(req, res, next) => {
               )
             }
         }))
+        if(process.env.NODE_ENV !== 'test'){
         //set cache
         const  cacheKey = req.originalUrl.toLowerCase();
-        Cache.redis.SETEX(cacheKey, 3600, JSON.stringify(regionState));
+       cacheInstance.redis.SETEX(cacheKey, 3600, JSON.stringify(regionState));
+        }
         res.status(200).json(regionState)
 
 })
 
 //function to get  Nigeria Sates and corresponding Locat govt. areas ONLY
 exports.getStateLga =  asyncHandler( async( req, res, next) =>{
-         const nigeriaData = await NaijaData.find({});
+         const nigeriaData = await NaijaData.find();
          if(!nigeriaData){
             const error = new CustomError("file not found!", 404);
             return next(error);
@@ -90,15 +99,17 @@ exports.getStateLga =  asyncHandler( async( req, res, next) =>{
               }  
             }))
         }
+        if(process.env.NODE_ENV !== 'test'){
         //set cache
         const  cacheKey = req.originalUrl.toLowerCase();
-        Cache.redis.SETEX(cacheKey, 3600, JSON.stringify(stateLga));
+       cacheInstance.redis.SETEX(cacheKey, 3600, JSON.stringify(stateLga));
+        }
         res.status(200).json(stateLga);        
 })
 
 //function to get  Nigeria Sates and corresponding Locat govt. areas ONLY
 exports.getStateMetadata =  asyncHandler( async( req, res, next) =>{
-         const nigeriaData = await NaijaData.find({});
+         const nigeriaData = await NaijaData.find();
          if(!nigeriaData){
             const error = new CustomError("file not found!", 404);
             return next(error);
@@ -113,10 +124,11 @@ exports.getStateMetadata =  asyncHandler( async( req, res, next) =>{
               }  
             }))
         }
+        if(process.env.NODE_ENV !== 'test'){
         //set cache
         const  cacheKey = req.originalUrl.toLowerCase();
-        Cache.redis.SETEX(cacheKey, 3600, JSON.stringify(stateMetadata));
-
+       cacheInstance.redis.SETEX(cacheKey, 3600, JSON.stringify(stateMetadata));
+        }
         res.status(200).json(stateMetadata);
 })
 
@@ -134,9 +146,11 @@ exports.getOneRegion = asyncHandler( async( req, res, next) =>{
       // const error = new CustomError("file not found!", 404);
       return next();
       }
+      if(process.env.NODE_ENV !== 'test'){
       //set cache
       const  cacheKey = req.originalUrl.toLowerCase();
-      Cache.redis.SETEX(cacheKey, 3600, JSON.stringify(data));
+     cacheInstance.redis.SETEX(cacheKey, 3600, JSON.stringify(data));
+      }
         res.status(200).json(data);
 
 })
@@ -148,7 +162,7 @@ exports.getOneState = asyncHandler( async(req, res, next) =>{
     stateName = stateName.map(state=> state.charAt(0).toUpperCase() + state.slice(1));
     stateName = stateName.join(" ");
 
-     const nigeriaData = await NaijaData.find({});
+     const nigeriaData = await NaijaData.find();
       if(!nigeriaData){
          // const error = new CustomError("file not found!", 404);
        return next();
@@ -173,10 +187,11 @@ exports.getOneState = asyncHandler( async(req, res, next) =>{
       if( statesResult[i].state == stateName ){
         
         const data = statesResult[i]
-
+        if(process.env.NODE_ENV !== 'test'){
         //set cache
         const  cacheKey = req.originalUrl.toLowerCase();
-        Cache.redis.SETEX(cacheKey, 3600, JSON.stringify(data));
+       cacheInstance.redis.SETEX(cacheKey, 3600, JSON.stringify(data));
+        }
          return res.status(200).json(statesResult[i]);
       }
     }     

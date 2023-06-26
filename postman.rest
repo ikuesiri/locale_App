@@ -17,12 +17,12 @@ Content-Type: application/json
 
 
 ###
-GET http://localhost:3000/api/v1/search/region-state
+GET http://localhost:3000/api/v1/search/region-states
 Content-Type: application/json
 
 
 ###
-GET http://localhost:3000/api/v1/search/state-lga
+GET http://localhost:3000/api/v1/search/state-lgas
 Content-Type: application/json
 
 

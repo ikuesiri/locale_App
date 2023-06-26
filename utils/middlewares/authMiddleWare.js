@@ -1,12 +1,15 @@
-const User = require("../../model/auth.model");
-const asyncHandler = require("../middlewares/AsyncHandler");
+const User = require("../../model/auth.model")
+const CustomError = require("../error/customError")
+const asyncHandler = require("../middlewares/AsyncHandler")
 
 
-const validateApiKey = asyncHandler( async(req, res, next) =>{
+ const validateApiKey = asyncHandler( async(req, res, next) =>{
     // const apiKey = req.query.apiKey
     const authHeader = req.headers.authorization;
     if(!authHeader  ||  ! authHeader.startsWith('Bearer ')){
-        throw new Error('Invalid Authentication')
+        // throw new Error('Invalid Authentication')
+        const error = new CustomError("Invalid Authentication", 400)
+        return next(error)
     }
 
     const apiKey = authHeader.split(" ")[1]
@@ -16,23 +19,12 @@ const validateApiKey = asyncHandler( async(req, res, next) =>{
         // }
         const validate =  await User.findOne({apiKey});
         if(!validate){
-            return res.status(401).json({errorMessage: `Invalid Api Key!`})
+            // return res.status(401).json({errorMessage: `Invalid Api Key!`})
+            const error = new CustomError("Invalid Api Key!", 401)
+            return next(error)
         }
         next()
-    
-    // } catch (error) {
-    //     console.error(error)
-    // }
-    
+
 })
 
 module.exports = validateApiKey;
-
-
-
-// const authenticate = (req, res, next) => {
-//     const authHeader = req.headers.authorization;
-//     if(!authHeader  ||  ! authHeader.startsWith('Bearer ')){
-//         throw new Error('Invalid Authentication')
-//     }
-    

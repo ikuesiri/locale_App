@@ -1,5 +1,6 @@
 .env
 node_modules
 plan.md
-test.rest
+postman.rest
 nigeria-states-and-local-govts
+route.bin.js

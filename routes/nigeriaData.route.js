@@ -1,7 +1,7 @@
-const express = require("express");
-const router =  express.Router();
+require("dotenv").config()
+const express = require("express")
 const cacheMiddleware = require("../utils/middlewares/cache.middleware")
-const validateApiKey = require("../utils/middlewares/authMiddleWare");
+const validateApiKey = require("../utils/middlewares/authMiddleWare")
 const { 
     getData,
     getRegions,
@@ -11,45 +11,47 @@ const {
     getStateMetadata,
     getOneRegion,
     getOneState,
- } = require("../controllers/nigeriaData.controller")
+} = require("../controllers/nigeriaData.controller")
+
+const router =  express.Router();
+
+if( process.env.NODE_ENV === 'test'){
+    router.get("/",validateApiKey,  getData);
+    router.get("/regions", validateApiKey,  getRegions);
+    router.get("/states",  validateApiKey, getStates);
+    router.get("/region-states",  validateApiKey, getRegionState);
+    router.get("/state-lgas",  validateApiKey, getStateLga);
+    router.get("/state-data",  validateApiKey, getStateMetadata);
+    // //----------------Query A value-----------------------
+    router.get("/regions/:regionName", validateApiKey,  getOneRegion);
+    //Gets details about a state
+    router.get("/states/:stateName", validateApiKey,  getOneState);
+}else{
+
+    router.get("/", validateApiKey,cacheMiddleware, getData);
+    router.get("/regions", validateApiKey,cacheMiddleware,  getRegions);
+    router.get("/states",  validateApiKey,cacheMiddleware, getStates);
+    router.get("/region-states",  validateApiKey,cacheMiddleware, getRegionState);
+    router.get("/state-lgas",  validateApiKey,cacheMiddleware, getStateLga);
+    router.get("/state-data",  validateApiKey,cacheMiddleware, getStateMetadata);
+    // //----------------Query A value-----------------------
+    router.get("/regions/:regionName", validateApiKey,cacheMiddleware,  getOneRegion);
+    //Gets details about a state
+    router.get("/states/:stateName", validateApiKey,cacheMiddleware,  getOneState);
+    
+}
 
 
-//@Desc full search ( region-states-lga-metadata)
-// url path '/search'
-// router.get("/",  validateApiKey,cacheMiddleware, getData);
-router.get("/", validateApiKey, getData);
-
-//@Desc search for regions Only
-// url path '/search/regions'
-router.get("/regions", validateApiKey,cacheMiddleware,  getRegions);
-
-//@Desc search for States Only
-// url path '/search/states'
-router.get("/states",  validateApiKey,cacheMiddleware, getStates);
-
-//@Desc search for regions with their corresponding States Only
-// url path '/search/region-state'
-router.get("/region-state",  validateApiKey,cacheMiddleware, getRegionState);
 
 
-//@Desc search for States with their corresponding local govt.areas Only
-// url path '/search/state-lga'
-router.get("/state-lga",  validateApiKey,cacheMiddleware, getStateLga);
 
 
-//@Desc search for States with their corresponding meta data Only
-// url path '/search/state-data'
-router.get("/state-data",  validateApiKey,cacheMiddleware, getStateMetadata);
 
 
-//----------------Query A value-----------------------
-//@Desc search for A region it's data
-// url path '/search/regions/:regionName'
-router.get("/regions/:regionName", validateApiKey,cacheMiddleware,  getOneRegion);
 
-//@Desc search for A State and it's data
-// url path '/search/states/:stateName'
-router.get("/states/:stateName", validateApiKey,cacheMiddleware,  getOneState);
+
+
+// Gets details about a region.
 
 
 module.exports = router;

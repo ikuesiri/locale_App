@@ -1,5 +1,5 @@
 {
-  "name": "locale_app",
+  "name": "locale_api",
   "version": "1.0.0",
   "description": "Locale is a developer tool for anyone who needs to know Nigeria geographically",
   "main": "app.js",
@@ -7,7 +7,7 @@
     "start": "node server.js",
     "prod": "cross-env NODE_ENV=production nodemon server.js",
     "dev": "cross-env NODE_ENV=development nodemon server.js",
-    "test": "jest --watchAll --detectOpenHandles --testTimeout=10000000"
+    "test": "jest cross-env NODE_ENV=test --detectOpenHandles --watchAll --testTimeout=100000"
   },
   "keywords": [
     "Nigeria",
@@ -19,13 +19,15 @@
   "dependencies": {
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-rate-limit": "^6.7.0",
-    "http-errors": "^2.0.0",
     "mongoose": "^7.1.1",
     "redis": "^4.6.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3",
     "uuid": "^9.0.0"
   },
   "devDependencies": {

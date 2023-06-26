@@ -1,4 +1,3 @@
-const CustomError = require("./customError");
 
 //development error function
 const devErrors = (res, error) =>{
@@ -30,7 +29,7 @@ const prodErrors = (res, error) =>{
    }
 }
 
-module.exports = (error, req, res, next)=>{
+const globalErrorHandler = (error, req, res, next)=>{
 error.statusCode = error.statusCode || 500;
 error.status = error.status || 'error';
 
@@ -43,3 +42,5 @@ if(process.env.NODE_ENV === 'development'){
    prodErrors(res, error);
    }
 }
+
+module.exports  = globalErrorHandler;

@@ -1,12 +1,13 @@
-const Redis = require('redis');
-const CONFIG = require("./env.config");
+const { createClient } = require('redis')
+const CONFIG = require("./env.config")
+
 class Cache{
     constructor() {
         this.redis = null
     }
     async connect(){
         try {
-             this.redis = await Redis.createClient({
+             this.redis = await createClient({
                url : CONFIG.redis_url             
              });
              this.redis.connect()
@@ -19,5 +20,7 @@ class Cache{
     }
 }
 
-module.exports  = new Cache();
+
+const cacheInstance = new Cache();
+module.exports = cacheInstance;
 
