@@ -55,12 +55,12 @@ swaggerUi.setup(specs, { explorer: true})
 
 
 
-// app.get("/", (req, res) => {
-//     res.send({
-//         success: true,
-//         message: " Welcome to NIG Locale service"
-//     })
-// });
+app.get("/", (req, res) => {
+    res.send({
+        success: true,
+        message: " Welcome to NIG Locale service"
+    })
+});
 
 //app middleware to the user registration & login routes
 app.use("/api/v1/auth", authRouter);
