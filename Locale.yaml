@@ -642,7 +642,8 @@ paths:
   /api/v1/search/states:
     get:
       summary: Get all states
-      tags: []
+      tags:
+        - naijaData endpoints
       responses:
         '200':
           description: OK success!
@@ -708,6 +709,110 @@ paths:
           $ref: '#/components/responses/http401'
       operationId: get-api-v1-search-states
       description: Returns an array list of  the name of all current states in Nigeria
+  /api/v1/search/region-states:
+    get:
+      summary: Get States Grouped by Regions
+      tags: [naijaData endpoints]
+      responses:
+        '200':
+          description: OK success!
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    regions:
+                      type: string
+                    states:
+                      type: array
+                      items:
+                        type: string
+                x-examples:
+                  Example 1:
+                    - regions: South West
+                      states:
+                        - Ekiti
+                        - Lagos
+                        - Ogun
+                        - Ondo
+                        - Osun
+                        - Oyo
+                    - regions: North Central
+                      states:
+                        - Federal Capital Territory
+                        - Benue
+                        - Kogi
+                        - Kwara
+                        - Nasarawa
+                        - Niger
+                        - Plateau
+                    - regions: North East
+                      states:
+                        - Adamawa
+                        - Bauchi
+                        - Borno
+                        - Gombe
+                        - Taraba
+                        - Yobe
+                    - regions: South East
+                      states:
+                        - Abia
+                        - Anambra
+                        - Ebonyi
+                        - Enugu
+                        - Imo
+                    - regions: North West
+                      states:
+                        - Jigawa
+                        - Kaduna
+                        - Kano
+                        - Katsina
+                        - Kebbi
+                        - Sokoto
+                        - Zamfara
+                    - regions: South South
+                      states:
+                        - Akwa Ibom
+                        - Bayelsa
+                        - Cross River
+                        - Delta
+                        - Edo
+                        - Rivers
+              examples:
+                Example 200:
+                  value:
+                    - regions: North West
+                      states:
+                        - Jigawa
+                        - Kaduna
+                        - Kano
+                        - Katsina
+                        - Kebbi
+                        - Sokoto
+                        - Zamfara
+        '400':
+          $ref: '#/components/responses/http400'
+        '401':
+          $ref: '#/components/responses/http401'
+      operationId: get-api-v1-search-region-states
+      description: ' Gets state grouped based on their region.'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties: {}
+        description: |-
+          [
+            {
+              "regions": "string",
+              "states": [
+                "string"
+              ]
+            }
+          ]
 components:
   securitySchemes:
     685e21f0-2fcc-4695-a7b9-66268819527d:
