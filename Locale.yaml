@@ -3,7 +3,7 @@ x-stoplight:
   id: wb8agdpnx3yd4
 info:
   version: '1.0'
-  title: Locale
+  title: Locale API
   summary: Get location and Meta Data of Nigeria
   description: 'Get complete data of Nigeria as well as endpoints to get ONLY regions or states, get states and their meta-data, regions and their states, states and local govt. areas etc. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `current` endpoint only from the Locale API. <br/><br/> **Note**: All parameters are optional, but selecting parameters will allow you get details of an individual region or state. Calling the API by state Name (using the `stateName` parameter) will provide that state results, without it,the result will be a list of all the states.'
   termsOfService: 'http://localhost:3000'
@@ -3613,7 +3613,7 @@ paths:
   '/api/v1/search/regions/{regionName}':
     get:
       summary: Search for A Region
-      tags: []
+      tags: [naijaData endpoints]
       responses:
         '200':
           description: OK Success!
@@ -4146,8 +4146,8 @@ paths:
         required: true
         description: 'Name of a Nigerian State {it''s case insensitive)'
     get:
-      summary: Your GET endpoint
-      tags: []
+      summary: Search for a State
+      tags: [naijaData endpoints]
       responses:
         '200':
           description: OK Success!
