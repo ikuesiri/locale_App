@@ -639,6 +639,75 @@ paths:
       servers:
         - url: 'http://localhost:3000'
           description: dev
+  /api/v1/search/states:
+    get:
+      summary: Get all states
+      tags: []
+      responses:
+        '200':
+          description: OK success!
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+                x-examples:
+                  Example 1:
+                    - Ekiti
+                    - Lagos
+                    - Ogun
+                    - Ondo
+                    - Osun
+                    - Oyo
+                    - Federal Capital Territory
+                    - Benue
+                    - Kogi
+                    - Kwara
+                    - Nasarawa
+                    - Niger
+                    - Plateau
+                    - Adamawa
+                    - Bauchi
+                    - Borno
+                    - Gombe
+                    - Taraba
+                    - Yobe
+                    - Abia
+                    - Anambra
+                    - Ebonyi
+                    - Enugu
+                    - Imo
+                    - Jigawa
+                    - Kaduna
+                    - Kano
+                    - Katsina
+                    - Kebbi
+                    - Sokoto
+                    - Zamfara
+                    - Akwa Ibom
+                    - Bayelsa
+                    - Cross River
+                    - Delta
+                    - Edo
+                    - Rivers
+              examples:
+                Example 200:
+                  value:
+                    - Lagos
+                    - Ogun
+                    - Federal Capital Territory
+                    - Anambra
+                    - Ebonyi
+                    - Kaduna
+                    - Kano
+                    - Rivers
+        '400':
+          $ref: '#/components/responses/http400'
+        '401':
+          $ref: '#/components/responses/http401'
+      operationId: get-api-v1-search-states
+      description: Returns an array list of  the name of all current states in Nigeria
 components:
   securitySchemes:
     685e21f0-2fcc-4695-a7b9-66268819527d:
@@ -657,7 +726,7 @@ components:
             Example 404:
               value:
                 status: 400
-                message: Invalid Authentication
+                message: No Api Key found!
         application/xml:
           schema:
             type: object
