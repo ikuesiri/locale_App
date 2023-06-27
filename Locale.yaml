@@ -586,31 +586,11 @@ paths:
             application/json:
               schema:
                 type: object
-              examples:
-                Example 1:
-                  value: {}
+              examples: {}
         '400':
-          description: Bad Request
-          content:
-            application/json:
-              schema:
-                type: object
-              examples:
-                Example (400):
-                  value:
-                    status: 400
-                    message: Invalid Authentication
+          $ref: '#/components/responses/http400'
         '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                type: object
-              examples:
-                Example (401):
-                  value:
-                    status: 401
-                    message: Invalid Api Key!
+          $ref: '#/components/responses/http401'
       security:
         - 685e21f0-2fcc-4695-a7b9-66268819527d: []
       servers:
@@ -630,8 +610,6 @@ paths:
             application/json:
               schema:
                 type: array
-                items:
-                  type: string
                 x-examples:
                   Example 1:
                     - South West
@@ -640,8 +618,11 @@ paths:
                     - South East
                     - North West
                     - South South
+                description: '*A list showing the names of all the regions in nigeria*'
+                items:
+                  type: string
               examples:
-                Example(200):
+                Example 200:
                   value:
                     - South West
                     - North Central
@@ -650,27 +631,9 @@ paths:
                     - North West
                     - South South
         '400':
-          description: Bad Request
-          content:
-            application/json:
-              schema:
-                type: object
-              examples:
-                Example (400):
-                  value:
-                    status: 400
-                    message: Invalid Authentication
+          $ref: '#/components/responses/http400'
         '401':
-          description: Unauthorized
-          content:
-            application/json:
-              schema:
-                type: object
-              examples:
-                Example (401):
-                  value:
-                    status: 401
-                    message: Invalid Api Key!
+          $ref: '#/components/responses/http401'
       security:
         - 685e21f0-2fcc-4695-a7b9-66268819527d: []
       servers:
@@ -681,6 +644,50 @@ components:
     685e21f0-2fcc-4695-a7b9-66268819527d:
       type: http
       scheme: bearer
+  responses:
+    http400:
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            properties:
+              id:
+                type: string
+          examples:
+            Example 404:
+              value:
+                status: 400
+                message: Invalid Authentication
+        application/xml:
+          schema:
+            type: object
+            properties: {}
+        multipart/form-data:
+          schema:
+            type: object
+            properties: {}
+        text/html:
+          schema:
+            type: object
+            properties: {}
+        text/plain:
+          schema:
+            type: object
+            properties: {}
+      headers: {}
+    http401:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            properties:
+              id:
+                type: string
+          examples:
+            Example 401:
+              value:
+                status: 401
+                message: Invalid Api Key!
 security:
   - 685e21f0-2fcc-4695-a7b9-66268819527d: []
 x-internal: false
