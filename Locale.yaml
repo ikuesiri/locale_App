@@ -837,7 +837,8 @@ paths:
   /api/v1/search/state-lgas:
     get:
       summary: Get LGAs Grouped by States.
-      tags: [naijaData endpoints]
+      tags:
+        - naijaData endpoints
       responses:
         '200':
           description: OK success!
@@ -1744,7 +1745,8 @@ paths:
   /api/v1/search/state-data:
     get:
       summary: Get all states and their metaData
-      tags: [naijaData endpoints]
+      tags:
+        - naijaData endpoints
       responses:
         '200':
           description: OK Success!
@@ -3608,6 +3610,860 @@ paths:
               }
             }
           ]
+  '/api/v1/search/regions/{regionName}':
+    get:
+      summary: Search for A Region
+      tags: []
+      responses:
+        '200':
+          description: OK Success!
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  _id:
+                    type: string
+                  name:
+                    type: string
+                  states:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                        lgas:
+                          type: array
+                          items:
+                            type: string
+                        metadata:
+                          type: object
+                          properties:
+                            capital:
+                              type: string
+                            other_cities:
+                              type: array
+                              items:
+                                type: string
+                            lga_count:
+                              type: integer
+                            region:
+                              type: string
+                            state_border:
+                              type: array
+                              items:
+                                type: string
+                            international_border:
+                              type: array
+                              items:
+                                type: object
+                                properties: {}
+                            slogan:
+                              type: string
+                            date_created:
+                              type: string
+                            current_govenor:
+                              type: string
+                            Area:
+                              type: string
+                            coordinates:
+                              type: string
+                            google_map_url:
+                              type: string
+                            population:
+                              type: integer
+                            GDP_2021:
+                              type: object
+                              properties:
+                                total:
+                                  type: string
+                                per_capita:
+                                  type: string
+                            major_ethnic_groups:
+                              type: array
+                              items:
+                                type: string
+                            major_languages:
+                              type: array
+                              items:
+                                type: string
+                            popular_dishes:
+                              type: array
+                              items:
+                                type: string
+                            image:
+                              type: object
+                              properties:
+                                flag_img:
+                                  type: string
+                                seal_img:
+                                  type: string
+                                map_img:
+                                  type: string
+                            website:
+                              type: string
+                        _id:
+                          type: string
+                  __v:
+                    type: integer
+                x-examples:
+                  Example 1:
+                    _id: 647ee2e9d0cd5fa4fd5bdac4
+                    name: South East
+                    states:
+                      - name: Abia
+                        lgas:
+                          - Aba North
+                          - Aba South
+                          - Arochukwu
+                          - Bende
+                          - Ikawuno
+                          - Ikwuano
+                          - Isiala-Ngwa North
+                          - Isiala-Ngwa South
+                          - Isuikwuato
+                          - Umu Nneochi
+                          - Obi Ngwa
+                          - Obioma Ngwa
+                          - Ohafia
+                          - Ohaozara
+                          - Osisioma
+                          - Ugwunagbo
+                          - Ukwa West
+                          - Ukwa East
+                          - Umuahia North
+                          - Umuahia South
+                        metadata:
+                          capital: Umuahia
+                          other_cities:
+                            - Aba
+                            - Ohafia
+                            - Arochukwu
+                            - Bende
+                            - Isiala Ngwa
+                          lga_count: 17
+                          region: South East
+                          state_border:
+                            - Enugu
+                            - Ebonyi
+                            - Imo
+                            - Cross River
+                            - Akwa Ibom
+                            - Rivers
+                          international_border: []
+                          slogan: God’s own State
+                          date_created: 27 August 1991
+                          current_govenor: Okezie Ikpeazu
+                          Area: '6,320 km2 (2,440 sq mi)'
+                          coordinates: 5°25′N 7°30′E
+                          google_map_url: 'https://www.google.com/maps/place/Abia,+Nigeria'
+                          population: 4112230
+                          GDP_2021:
+                            total: $22.83 billion
+                            per_capita: '$5,351'
+                          major_ethnic_groups:
+                            - Igbo
+                          major_languages:
+                            - Igbo
+                          popular_dishes:
+                            - Abacha
+                            - Okpa
+                            - Ofe Nsala
+                          image:
+                            flag_img: 'https://upload.wikimedia.org/wikipedia/commons/f/ff/Abia_State_Flag.gif'
+                            seal_img: 'https://upload.wikimedia.org/wikipedia/commons/a/a8/Abia_State_Coat_of_Arms.gif'
+                            map_img: 'https://upload.wikimedia.org/wikipedia/commons/d/df/Nigeria_-_Abia.svg'
+                          website: 'http://www.abiastate.gov.ng/'
+                        _id: 647ee2e9d0cd5fa4fd5bdac5
+                      - name: Anambra
+                        lgas:
+                          - Aguata
+                          - Anambra East
+                          - Anambra West
+                          - Anaocha
+                          - Awka North
+                          - Awka South
+                          - Ayamelum
+                          - Dunukofia
+                          - Ekwusigo
+                          - Idemili-North
+                          - Idemili-South
+                          - Ihiala
+                          - Njikoka
+                          - Nnewi-North
+                          - Nnewi-South
+                          - Ogbaru
+                          - Onitsha-North
+                          - Onitsha-South
+                          - Orumba-North
+                          - Orumba-South
+                        metadata:
+                          capital: Akwa
+                          other_cities:
+                            - Onitsha
+                            - Nnewi
+                          lga_count: 21
+                          region: South East
+                          state_border:
+                            - Delta
+                            - Imo
+                            - Enugu
+                            - Kogi
+                          international_border: []
+                          slogan: Light of the nation
+                          date_created: 27 August 1991
+                          current_govenor: Charles Chukwuma Soludo
+                          Area: '4,844 km2 (1,870 sq mi)'
+                          coordinates: 6°20′N 7°00′E
+                          google_map_url: 'https://www.google.com/maps/place/Anambra,+Nigeria'
+                          population: 5599910
+                          GDP_2021:
+                            total: $33.26 billion
+                            per_capita: '$5,231'
+                          major_ethnic_groups:
+                            - Igbo
+                          major_languages:
+                            - Igbo
+                          popular_dishes:
+                            - Ofe Nsala
+                            - Ugba na Okporoko
+                            - Nkwobi
+                          image:
+                            flag_img: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Anambra_State.png'
+                            seal_img: 'https://upload.wikimedia.org/wikipedia/en/c/c8/Seal_of_Anambra_State.png'
+                            map_img: 'https://upload.wikimedia.org/wikipedia/commons/f/f0/Nigeria_-_Anambra.svg'
+                          website: 'http://www.anambrastate.gov.ng/'
+                        _id: 647ee2e9d0cd5fa4fd5bdac6
+                      - name: Ebonyi
+                        lgas:
+                          - Abakaliki
+                          - Afikpo-North
+                          - Afikpo South (Edda)
+                          - Ebonyi
+                          - Ezza-North
+                          - Ezza-South
+                          - Ikwo
+                          - Ishielu
+                          - Ivo
+                          - Izzi
+                          - Ohaukwu
+                          - Onicha
+                        metadata:
+                          capital: Abakiliki
+                          other_cities:
+                            - Abakaliki
+                            - Afikpo
+                            - Onueke
+                          lga_count: 12
+                          region: South East
+                          state_border:
+                            - Benue
+                            - Enugu
+                            - Cross River
+                            - Abia
+                          international_border: []
+                          slogan: The salt of the Nation
+                          date_created: 1 October 1996
+                          current_govenor: Dave Umahi
+                          Area: '5,533 km2 (2,136 sq mi)'
+                          coordinates: 6°15′N 8°05′E
+                          google_map_url: 'https://www.google.com/maps/place/Ebonyi,+Nigeria'
+                          population: 3007155
+                          GDP_2021:
+                            total: N/A
+                            per_capita: N/A
+                          major_ethnic_groups:
+                            - Igbo
+                          major_languages:
+                            - Igbo
+                          popular_dishes:
+                            - Abacha
+                            - Nkwobi
+                            - Ugba na Okporoko
+                          image:
+                            flag_img: N/A
+                            seal_img: 'https://upload.wikimedia.org/wikipedia/en/5/5f/Seal_of_Ebonyi_State_of_Nigeria.png'
+                            map_img: 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Nigeria_-_Ebonyi.svg'
+                          website: 'http://www.ebonyistate.gov.ng/'
+                        _id: 647ee2e9d0cd5fa4fd5bdac7
+                      - name: Enugu
+                        lgas:
+                          - Aninri
+                          - Awgu
+                          - Enugu-East
+                          - Enugu-North
+                          - Enugu-South
+                          - Ezeagu
+                          - Igbo-Etiti
+                          - Igbo-Eze-North
+                          - Igbo-Eze-South
+                          - Isi-Uzo
+                          - Nkanu-East
+                          - Nkanu-West
+                          - Nsukka
+                          - Oji-River
+                          - Udenu
+                          - Udi
+                          - Uzo-Uwani
+                        metadata:
+                          capital: Enugu
+                          other_cities:
+                            - Nsukka
+                            - Agbani
+                          lga_count: 17
+                          region: South East
+                          state_border:
+                            - Kogi
+                            - Ebonyi
+                            - Abia
+                            - Anambra
+                          international_border: []
+                          slogan: Coal City State
+                          date_created: 27 August 1991
+                          current_govenor: Ifeanyi Ugwuanyi
+                          Area: '7,161 km2 (2,765 sq mi)'
+                          coordinates: 6°30′N 7°30′E
+                          google_map_url: 'https://www.google.com/maps/place/Enugu,+Nigeria'
+                          population: 4396098
+                          GDP_2021:
+                            total: $9.35 billion
+                            per_capita: '$1,802'
+                          major_ethnic_groups:
+                            - Igbo
+                          major_languages:
+                            - Igbo
+                          popular_dishes:
+                            - Ofe Akwu
+                            - Abacha
+                            - Nsala Soup
+                          image:
+                            flag_img: N/A
+                            seal_img: 'https://upload.wikimedia.org/wikipedia/commons/9/9b/Enugu_state_Coat_of_Arms.jpg'
+                            map_img: 'https://upload.wikimedia.org/wikipedia/commons/d/d7/Nigeria_-_Enugu.svg'
+                          website: 'http://www.enugustate.gov.ng/'
+                        _id: 647ee2e9d0cd5fa4fd5bdac8
+                      - name: Imo
+                        lgas:
+                          - Aboh-Mbaise
+                          - Ahiazu-Mbaise
+                          - Ehime-Mbano
+                          - Ezinihitte
+                          - Ideato-North
+                          - Ideato-South
+                          - Ihitte/Uboma
+                          - Ikeduru
+                          - Isiala-Mbano
+                          - Isu
+                          - Mbaitoli
+                          - Ngor-Okpala
+                          - Njaba
+                          - Nkwerre
+                          - Nwangele
+                          - Obowo
+                          - Oguta
+                          - Ohaji-Egbema
+                          - Okigwe
+                          - Onuimo
+                          - Orlu
+                          - Orsu
+                          - Oru-East
+                          - Oru-West
+                          - Owerri-Municipal
+                          - Owerri-North
+                          - Owerri-West
+                        metadata:
+                          capital: Owerri
+                          other_cities:
+                            - Orlu
+                            - Okigwe
+                          lga_count: 27
+                          region: South East
+                          state_border:
+                            - Anambra
+                            - Rivers
+                            - Abia
+                          international_border: []
+                          slogan: Eastern heartland
+                          date_created: 3 February 1976
+                          current_govenor: Hope Uzodimma
+                          Area: '5,530 km2 (2,140 sq mi)'
+                          coordinates: 5°29′N 7°2′E
+                          google_map_url: 'https://www.google.com/maps/place/Imo,+Nigeria'
+                          population: 5167722
+                          GDP_2021:
+                            total: $49.69 billion
+                            per_capita: '$7,828'
+                          major_ethnic_groups:
+                            - Igbo
+                          major_languages:
+                            - Igbo
+                          popular_dishes:
+                            - Ofe Owerri
+                            - Abacha
+                            - Nkwobi
+                          image:
+                            flag_img: 'https://upload.wikimedia.org/wikipedia/commons/1/15/Imo_State_Flag.svg'
+                            seal_img: 'https://upload.wikimedia.org/wikipedia/commons/0/0b/Imo_State_Government.jpg'
+                            map_img: 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Nigeria_-_Imo.svg'
+                          website: N/A
+                        _id: 647ee2e9d0cd5fa4fd5bdac9
+                    __v: 0
+              examples:
+                Example 1:
+                  value:
+                    _id: string
+                    name: string
+                    states:
+                      - name: string
+                        lgas:
+                          - string
+                        metadata:
+                          capital: string
+                          other_cities:
+                            - string
+                          lga_count: 0
+                          region: string
+                          state_border:
+                            - string
+                          international_border:
+                            - {}
+                          slogan: string
+                          date_created: string
+                          current_govenor: string
+                          Area: string
+                          coordinates: string
+                          google_map_url: string
+                          population: 0
+                          GDP_2021:
+                            total: string
+                            per_capita: string
+                          major_ethnic_groups:
+                            - string
+                          major_languages:
+                            - string
+                          popular_dishes:
+                            - string
+                          image:
+                            flag_img: string
+                            seal_img: string
+                            map_img: string
+                          website: string
+                        _id: string
+                    __v: 0
+        '400':
+          $ref: '#/components/responses/http400'
+        '401':
+          $ref: '#/components/responses/http401'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+              examples:
+                Example 404:
+                  value:
+                    status: 404
+                    message: 'Cannot find /api/v1/search/regions/{wrongRegionName} on the server'
+      operationId: get-api-v1-search-regions
+      description: Gets details about a region.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties: {}
+        description: |-
+          {
+            "_id": "string",
+            "name": "string",
+            "states": [
+              {
+                "name": "string",
+                "lgas": [
+                  "string"
+                ],
+                "metadata": {
+                  "capital": "string",
+                  "other_cities": [
+                    "string"
+                  ],
+                  "lga_count": 0,
+                  "region": "string",
+                  "state_border": [
+                    "string"
+                  ],
+                  "international_border": [
+                    {}
+                  ],
+                  "slogan": "string",
+                  "date_created": "string",
+                  "current_govenor": "string",
+                  "Area": "string",
+                  "coordinates": "string",
+                  "google_map_url": "string",
+                  "population": 0,
+                  "GDP_2021": {
+                    "total": "string",
+                    "per_capita": "string"
+                  },
+                  "major_ethnic_groups": [
+                    "string"
+                  ],
+                  "major_languages": [
+                    "string"
+                  ],
+                  "popular_dishes": [
+                    "string"
+                  ],
+                  "image": {
+                    "flag_img": "string",
+                    "seal_img": "string",
+                    "map_img": "string"
+                  },
+                  "website": "string"
+                },
+                "_id": "string"
+              }
+            ],
+            "__v": 0
+          }
+    parameters:
+      - schema:
+          type: string
+        name: regionName
+        in: path
+        description: Enter the name of a region to get all details about that region
+        required: true
+  '/api/v1/search/states/{stateName}':
+    parameters:
+      - schema:
+          type: string
+        name: stateName
+        in: path
+        required: true
+        description: 'Name of a Nigerian State {it''s case insensitive)'
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses:
+        '200':
+          description: OK Success!
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  state:
+                    type: string
+                  lgas:
+                    type: array
+                    items:
+                      type: string
+                  metadata:
+                    type: object
+                    properties:
+                      capital:
+                        type: string
+                      other_cities:
+                        type: array
+                        items:
+                          type: string
+                      lga_count:
+                        type: integer
+                      region:
+                        type: string
+                      state_border:
+                        type: array
+                        items:
+                          type: string
+                      international_border:
+                        type: array
+                        items:
+                          type: object
+                          properties: {}
+                      slogan:
+                        type: string
+                      date_created:
+                        type: string
+                      current_govenor:
+                        type: string
+                      Area:
+                        type: string
+                      coordinates:
+                        type: string
+                      google_map_url:
+                        type: string
+                      population:
+                        type: integer
+                      GDP_2021:
+                        type: object
+                        properties:
+                          total:
+                            type: string
+                          per_capita:
+                            type: string
+                      major_ethnic_groups:
+                        type: array
+                        items:
+                          type: string
+                      major_languages:
+                        type: array
+                        items:
+                          type: string
+                      popular_dishes:
+                        type: array
+                        items:
+                          type: string
+                      image:
+                        type: object
+                        properties:
+                          flag_img:
+                            type: string
+                          seal_img:
+                            type: string
+                          map_img:
+                            type: string
+                      website:
+                        type: string
+                x-examples:
+                  Example 1:
+                    state: Delta
+                    lgas:
+                      - Aniocha North
+                      - Aniocha-North
+                      - Aniocha-South
+                      - Bomadi
+                      - Burutu
+                      - Ethiope-East
+                      - Ethiope-West
+                      - Ika-North-East
+                      - Ika-South
+                      - Isoko-North
+                      - Isoko-South
+                      - Ndokwa-East
+                      - Ndokwa-West
+                      - Okpe
+                      - Oshimili-North
+                      - Oshimili-South
+                      - Patani
+                      - Sapele
+                      - Udu
+                      - Ughelli-North
+                      - Ughelli-South
+                      - Ukwuani
+                      - Uvwie
+                      - Warri South-West
+                      - Warri North
+                      - Warri South
+                    metadata:
+                      capital: Asaba
+                      other_cities:
+                        - Igbuzo
+                        - Warri
+                        - Ozoro
+                        - Illah
+                        - Osubi
+                        - Aboh
+                        - Obiaruku
+                        - Sapele
+                        - Otor-Udu
+                      lga_count: 25
+                      region: South South
+                      state_border:
+                        - Edo
+                        - Anambra
+                        - Rivers
+                        - Bayelsa
+                      international_border: []
+                      slogan: The Finger of God
+                      date_created: 27 August 1991
+                      current_govenor: Ifeanyi Okowa
+                      Area: '17,698 km2 (6,833 sq mi)'
+                      coordinates: 5°30′N 6°00′E
+                      google_map_url: 'https://www.google.com/maps/place/Delta,+Nigeria'
+                      population: 5307543
+                      GDP_2021:
+                        total: $40.05 billion
+                        per_capita: '$6,025'
+                      major_ethnic_groups:
+                        - Urhobo
+                        - Itsekiri
+                        - Ijaw
+                        - Isoko
+                        - Anioma
+                      major_languages:
+                        - Urhobo
+                        - Itsekiri
+                        - Ijaw
+                        - Isoko
+                        - Anioma
+                      popular_dishes:
+                        - Ogbono Soup
+                        - Banga Soup
+                        - Ukodo
+                        - Owo Soup
+                      image:
+                        flag_img: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/Delta_State_Flag.gif'
+                        seal_img: 'https://upload.wikimedia.org/wikipedia/en/d/d6/Seal_of_delta_State.png'
+                        map_img: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Nigeria_-_Delta.svg'
+                      website: 'http://www.deltastate.gov.ng/'
+              examples:
+                Example 200:
+                  value:
+                    state: Delta
+                    lgas:
+                      - Aniocha North
+                      - Aniocha-North
+                      - Aniocha-South
+                      - Bomadi
+                      - Burutu
+                      - Ethiope-East
+                      - Ethiope-West
+                      - Ika-North-East
+                      - Ika-South
+                      - Isoko-North
+                      - Isoko-South
+                      - Ndokwa-East
+                      - Ndokwa-West
+                      - Okpe
+                      - Oshimili-North
+                      - Oshimili-South
+                      - Patani
+                      - Sapele
+                      - Udu
+                      - Ughelli-North
+                      - Ughelli-South
+                      - Ukwuani
+                      - Uvwie
+                      - Warri South-West
+                      - Warri North
+                      - Warri South
+                    metadata:
+                      capital: Asaba
+                      other_cities:
+                        - Igbuzo
+                        - Warri
+                        - Ozoro
+                        - Illah
+                        - Osubi
+                        - Aboh
+                        - Obiaruku
+                        - Sapele
+                        - Otor-Udu
+                      lga_count: 25
+                      region: South South
+                      state_border:
+                        - Edo
+                        - Anambra
+                        - Rivers
+                        - Bayelsa
+                      international_border: []
+                      slogan: The Finger of God
+                      date_created: 27 August 1991
+                      current_govenor: Ifeanyi Okowa
+                      Area: '17,698 km2 (6,833 sq mi)'
+                      coordinates: 5°30′N 6°00′E
+                      google_map_url: 'https://www.google.com/maps/place/Delta,+Nigeria'
+                      population: 5307543
+                      GDP_2021:
+                        total: $40.05 billion
+                        per_capita: '$6,025'
+                      major_ethnic_groups:
+                        - Urhobo
+                        - Itsekiri
+                        - Ijaw
+                        - Isoko
+                        - Anioma
+                      major_languages:
+                        - Urhobo
+                        - Itsekiri
+                        - Ijaw
+                        - Isoko
+                        - Anioma
+                      popular_dishes:
+                        - Ogbono Soup
+                        - Banga Soup
+                        - Ukodo
+                        - Owo Soup
+                      image:
+                        flag_img: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/Delta_State_Flag.gif'
+                        seal_img: 'https://upload.wikimedia.org/wikipedia/en/d/d6/Seal_of_delta_State.png'
+                        map_img: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Nigeria_-_Delta.svg'
+                      website: 'http://www.deltastate.gov.ng/'
+        '400':
+          $ref: '#/components/responses/http400'
+        '401':
+          $ref: '#/components/responses/http401'
+        '404':
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+              examples:
+                Example 404:
+                  value:
+                    status: 404
+                    message: 'Cannot find /api/v1/search/states/{wrongStateName} on the server'
+      operationId: get-api-v1-search-states-stateName
+      description: Returns all details about a queried state in Nigeria.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties: {}
+        description: |-
+          {
+            "state": "string",
+            "lgas": [
+              "string"
+            ],
+            "metadata": {
+              "capital": "string",
+              "other_cities": [
+                "string"
+              ],
+              "lga_count": 0,
+              "region": "string",
+              "state_border": [
+                "string"
+              ],
+              "international_border": [
+                {}
+              ],
+              "slogan": "string",
+              "date_created": "string",
+              "current_govenor": "string",
+              "Area": "string",
+              "coordinates": "string",
+              "google_map_url": "string",
+              "population": 0,
+              "GDP_2021": {
+                "total": "string",
+                "per_capita": "string"
+              },
+              "major_ethnic_groups": [
+                "string"
+              ],
+              "major_languages": [
+                "string"
+              ],
+              "popular_dishes": [
+                "string"
+              ],
+              "image": {
+                "flag_img": "string",
+                "seal_img": "string",
+                "map_img": "string"
+              },
+              "website": "string"
+            }
+          }
 components:
   securitySchemes:
     685e21f0-2fcc-4695-a7b9-66268819527d:
