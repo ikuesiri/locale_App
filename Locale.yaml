@@ -1,0 +1,686 @@
+openapi: 3.1.0
+x-stoplight:
+  id: wb8agdpnx3yd4
+info:
+  version: '1.0'
+  title: Locale
+  summary: Get location and Meta Data of Nigeria
+  description: 'Get complete data of Nigeria as well as endpoints to get ONLY regions or states, get states and their meta-data, regions and their states, states and local govt. areas etc. Data is available in JSON, XML, or HTML format. **Note**: This sample Swagger file covers the `current` endpoint only from the Locale API. <br/><br/> **Note**: All parameters are optional, but selecting parameters will allow you get details of an individual region or state. Calling the API by state Name (using the `stateName` parameter) will provide that state results, without it,the result will be a list of all the states.'
+  termsOfService: 'http://localhost:3000'
+  contact:
+    name: Kola
+    email: ikuesiri.onosemuode@gmail.com
+    url: 'http://localhost:3000'
+  license:
+    url: 'https://creativecommons.org/licenses/by-sa/4.0/'
+    name: Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+servers:
+  - url: 'http://localhost:3000'
+    description: dev
+paths:
+  /api/v1/search:
+    get:
+      tags:
+        - naijaData endpoints
+      summary: Get all Data
+      description: ' Returns all data, comprising of regions, states,local govt. areas, and their metadata.'
+      operationId: get-naija
+      requestBody:
+        description: Success!
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                _id:
+                  type: string
+                  description: "*auto-generated id*\r\n"
+                name:
+                  type: string
+                  description: "**Name of Region** *Example*\r\n- South South\r\n- South East\r\n- South West\r\n- North Central\r\n- North West\r\n- North East "
+                states:
+                  type: array
+                  description: '*name of states*'
+                  items:
+                    type: object
+                    properties:
+                      name:
+                        type: string
+                        description: "**name of states** *Example*\r\n- Edo\r\n- Delta\r\n- Anambra\r\n- Lagos etc.\r\n\r\n"
+                      lgas:
+                        type: array
+                        items:
+                          type: string
+                      metadata:
+                        type: object
+                        properties:
+                          capital:
+                            type: string
+                          other_cities:
+                            type: array
+                            items:
+                              type: string
+                          lga_count:
+                            type: integer
+                          region:
+                            type: string
+                          state_border:
+                            type: array
+                            items:
+                              type: string
+                          international_border:
+                            type: array
+                            items:
+                              type: string
+                          slogan:
+                            type: string
+                          date_created:
+                            type: string
+                          current_govenor:
+                            type: string
+                          Area:
+                            type: string
+                          coordinates:
+                            type: string
+                          google_map_url:
+                            type: string
+                          population:
+                            type: integer
+                          GDP_2021:
+                            type: object
+                            properties:
+                              total:
+                                type: string
+                              per_capita:
+                                type: string
+                          major_ethnic_groups:
+                            type: array
+                            items:
+                              type: string
+                          major_languages:
+                            type: array
+                            items:
+                              type: string
+                          popular_dishes:
+                            type: array
+                            items:
+                              type: string
+                          image:
+                            type: object
+                            properties:
+                              flag_img:
+                                type: string
+                              seal_img:
+                                type: string
+                              map_img:
+                                type: string
+                          website:
+                            type: string
+                      _id:
+                        type: string
+                __v:
+                  type: integer
+              required:
+                - name
+                - states
+              x-examples:
+                Example 1:
+                  _id: 647ee2e9d0cd5fa4fd5bdad1
+                  name: South West
+                  states:
+                    - name: Ekiti
+                      lgas:
+                        - Ado-Ekiti
+                        - Efon
+                        - Ekiti-East
+                        - Ekiti-South-West
+                        - Ekiti-West
+                        - Emure
+                        - Gbonyin
+                        - Ido-Osi
+                        - Ijero
+                        - Ikere
+                        - Ikole
+                        - Ilejemeje
+                        - Irepodun/Ifelodun
+                        - Ise-Orun
+                        - Moba
+                        - Oye
+                      metadata:
+                        capital: Ado-Ekiti
+                        other_cities:
+                          - Ikere-Ekiti
+                          - Ijero-Ekiti
+                        lga_count: 16
+                        region: South West
+                        state_border:
+                          - Kwara
+                          - Ondo
+                          - Osun
+                        international_border: []
+                        slogan: The Heart Beat of the Nation
+                        date_created: 1 October 1996
+                        current_govenor: Godwin Obaseki
+                        Area: '6,353 km2 (2,453 sq mi)'
+                        coordinates: 7°40′N 5°15′E
+                        google_map_url: 'https://www.google.com/maps/place/Ekiti,+Nigeria'
+                        population: 3350401
+                        GDP_2021:
+                          total: $15.20 billion
+                          per_capita: '$3,979'
+                        major_ethnic_groups:
+                          - Yoruba
+                        major_languages:
+                          - Yoruba
+                        popular_dishes:
+                          - Amala and Ewedu Soup
+                          - Ikokore
+                          - Gbegiri Soup
+                        image:
+                          flag_img: 'https://upload.wikimedia.org/wikipedia/commons/0/02/Ekiti_State_Flag.gif'
+                          seal_img: 'https://upload.wikimedia.org/wikipedia/en/5/53/Seal_of_Ekiti_State.png'
+                          map_img: 'https://upload.wikimedia.org/wikipedia/commons/6/66/Nigeria_-_Ekiti.svg'
+                        website: N/A
+                      _id: 647ee2e9d0cd5fa4fd5bdad2
+                    - name: Lagos
+                      lgas:
+                        - Agege
+                        - Ajeromi-Ifelodun
+                        - Alimosho
+                        - Amuwo-Odofin
+                        - Apapa
+                        - Badagry
+                        - Epe
+                        - Eti-Osa
+                        - Ibeju-Lekki
+                        - Ifako-Ijaiye
+                        - Ikeja
+                        - Ikorodu
+                        - Kosofe
+                        - Lagos-Island
+                        - Lagos-Mainland
+                        - Mushin
+                        - Ojo
+                        - Oshodi-Isolo
+                        - Shomolu
+                        - Surulere
+                        - Yewa-South
+                      metadata:
+                        capital: Ikeja
+                        other_cities:
+                          - Lagos Island
+                          - Badagry
+                        lga_count: 16
+                        region: South West
+                        state_border:
+                          - Ogun
+                          - Ondo
+                          - Edo
+                        international_border: []
+                        slogan: The state of Harmony
+                        date_created: 'May 27, 1967'
+                        current_govenor: Babajide Sanwo-Olu
+                        Area: '3,345 km2 (1,292 sq mi)'
+                        coordinates: 6.455027°N 3.384082°E
+                        google_map_url: 'https://www.google.com/maps/place/Lagos,+Nigeria'
+                        population: 16437435
+                        GDP_2021:
+                          total: N/A
+                          per_capita: N/A
+                        major_ethnic_groups:
+                          - Yoruba
+                          - Igbo
+                          - Hausa
+                          - Egun
+                        major_languages:
+                          - Yoruba
+                          - English
+                        popular_dishes:
+                          - Jollof Rice
+                          - Ewa Agoyin
+                          - Pounded Yam and Egusi Soup
+                        image:
+                          flag_img: N/A
+                          seal_img: 'https://upload.wikimedia.org/wikipedia/en/5/5f/Seal_of_Ebonyi_State_of_Nigeria.png'
+                          map_img: 'https://upload.wikimedia.org/wikipedia/commons/9/98/Lagos_Map.PNG'
+                        website: ' http://www.lagosstate.gov.ng/'
+                      _id: 647ee2e9d0cd5fa4fd5bdad3
+                    - name: Ogun
+                      lgas:
+                        - Abeokuta North
+                        - Abeokuta South
+                        - Ado-Odo/Ota
+                        - Ewekoro
+                        - Ifo
+                        - Ijebu East
+                        - Ijebu North
+                        - Ijebu North East
+                        - Ijebu Ode
+                        - Ikenne
+                        - Imeko Afon
+                        - Ipokia
+                        - Obafemi Owode
+                        - Odeda
+                        - Odogbolu
+                        - Ogun Waterside
+                        - Remo North
+                        - Sagamu
+                        - Yewa North
+                        - Yewa South
+                      metadata:
+                        capital: Abeokuta
+                        other_cities:
+                          - Ijebu Ode
+                          - Sagamu
+                        lga_count: 20
+                        region: South West
+                        state_border:
+                          - Lagos
+                          - Oyo
+                          - Osun
+                          - Ondo
+                        international_border:
+                          - Benin Republic
+                        slogan: The Gateway State
+                        date_created: 3 February 1976
+                        current_govenor: Dapo Abiodun
+                        Area: '16,980.55 km2 (6,556.23 sq mi)'
+                        coordinates: 7°00′N 3°35′E
+                        google_map_url: 'https://www.google.com/maps/place/Ogun,+Nigeria'
+                        population: 5945275
+                        GDP_2021:
+                          total: $32.55 billion
+                          per_capita: '$5,288'
+                        major_ethnic_groups:
+                          - Yoruba
+                          - Egba
+                          - Awori
+                          - Ijebu
+                        major_languages:
+                          - Yoruba
+                          - English
+                        popular_dishes:
+                          - Amala and Ewedu Soup
+                          - Ogun Eja
+                          - Gbegiri and Ewedu
+                        image:
+                          flag_img: 'https://upload.wikimedia.org/wikipedia/commons/c/c9/Ogun_State_Flag.jpg'
+                          seal_img: 'https://upload.wikimedia.org/wikipedia/en/1/1a/Seal_of_Ogun_State.png'
+                          map_img: 'https://upload.wikimedia.org/wikipedia/commons/1/19/Nigeria_-_Ogun.svg'
+                        website: 'http://www.ogunstate.gov.ng/'
+                      _id: 647ee2e9d0cd5fa4fd5bdad4
+                    - name: Ondo
+                      lgas:
+                        - Akoko North-East
+                        - Akoko North-West
+                        - Akoko South-West
+                        - Akoko South-East
+                        - Akure-North
+                        - Akure-South
+                        - Ese-Odo
+                        - Idanre
+                        - Ifedore
+                        - Ilaje
+                        - Ile-Oluji-Okeigbo
+                        - Irele
+                        - Odigbo
+                        - Okitipupa
+                        - Ondo West
+                        - Ondo-East
+                        - Ose
+                        - Owo
+                      metadata:
+                        capital: Akure
+                        other_cities:
+                          - Ondo
+                          - Owo
+                        lga_count: 18
+                        region: South West
+                        state_border:
+                          - Ekiti
+                          - Kogi
+                          - Edo
+                          - Delta
+                          - Ogun
+                        international_border: []
+                        slogan: The Sunshine State
+                        date_created: 3 February 1976
+                        current_govenor: Rotimi Akeredolu
+                        Area: '15,500 km2 (6,000 sq mi)'
+                        coordinates: 7°10′N 5°05′E
+                        google_map_url: 'https://www.google.com/maps/place/Ondo,+Nigeria'
+                        population: 4969707
+                        GDP_2021:
+                          total: $33.00 billion
+                          per_capita: '$6,077'
+                        major_ethnic_groups:
+                          - Yoruba
+                          - Ikale
+                          - Ilaje
+                          - Owo
+                        major_languages:
+                          - Yoruba
+                          - English
+                        popular_dishes:
+                          - Iyan and Egusi Soup
+                          - Obe Ata
+                          - Ogbono Soup
+                        image:
+                          flag_img: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Ondo_State_Flag.jpg'
+                          seal_img: 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Seal_of_Ondo_State.png'
+                          map_img: 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Nigeria_-_Ondo.svg'
+                        website: ' http://ondostate.gov.ng/'
+                      _id: 647ee2e9d0cd5fa4fd5bdad5
+                    - name: Osun
+                      lgas:
+                        - Atakumosa West
+                        - Atakumosa East
+                        - Ayedaade
+                        - Ayedire
+                        - Boluwaduro
+                        - Boripe
+                        - Ede South
+                        - Ede North
+                        - Egbedore
+                        - Ejigbo
+                        - Ife North
+                        - Ife South
+                        - Ife-Central
+                        - Ife-East
+                        - Ifelodun
+                        - Ila
+                        - Ilesa-East
+                        - Ilesa-West
+                        - Irepodun
+                        - Irewole
+                        - Isokan
+                        - Iwo
+                        - Obokun
+                        - Odo-Otin
+                        - Ola Oluwa
+                        - Olorunda
+                        - Oriade
+                        - Orolu
+                        - Osogbo
+                      metadata:
+                        capital: Osogbo
+                        other_cities:
+                          - Ilesa
+                          - Ife
+                        lga_count: 30
+                        region: South West
+                        state_border:
+                          - Ekiti
+                          - Ondo
+                          - Kwara
+                          - Ogun
+                          - Oyo
+                        international_border: []
+                        slogan: Land of virtue
+                        date_created: 27 August 1991
+                        current_govenor: Isiaka Adegboyega Oyetola
+                        Area: '9,251 km2 (3,572 sq mi)'
+                        coordinates: 07°30′N 4°30′E
+                        google_map_url: 'https://www.google.com/maps/place/Osun,+Nigeria'
+                        population: 4237396
+                        GDP_2021:
+                          total: $14.86 billion
+                          per_capita: '$2,691'
+                        major_ethnic_groups:
+                          - Yoruba
+                          - Ijesha
+                          - Oyo
+                          - Ife
+                        major_languages:
+                          - Yoruba
+                          - English
+                        popular_dishes:
+                          - Amala and Ewedu Soup
+                          - Pounded Yam and Egusi Soup
+                          - Ofada Rice
+                        image:
+                          flag_img: 'https://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_Osun_State%2C_Nigeria.svg'
+                          seal_img: 'https://upload.wikimedia.org/wikipedia/en/d/dc/Seal_of_Osun_State.png'
+                          map_img: 'https://upload.wikimedia.org/wikipedia/commons/8/88/Nigeria_-_Osun.svg'
+                        website: 'https://www.osunstate.gov.ng/'
+                      _id: 647ee2e9d0cd5fa4fd5bdad6
+                    - name: Oyo
+                      lgas:
+                        - Afijio
+                        - Akinyele
+                        - Atiba
+                        - Atisbo
+                        - Egbeda
+                        - Ibadan North
+                        - Ibadan North-East
+                        - Ibadan North-West
+                        - Ibadan South-East
+                        - Ibadan South-West
+                        - Ibarapa-Central
+                        - Ibarapa-East
+                        - Ibarapa-North
+                        - Ido
+                        - Ifedayo
+                        - Irepo
+                        - Iseyin
+                        - Itesiwaju
+                        - Iwajowa
+                        - Kajola
+                        - Lagelu
+                        - Ogo-Oluwa
+                        - Ogbomosho-North
+                        - Ogbomosho-South
+                        - Olorunsogo
+                        - Oluyole
+                        - Ona-Ara
+                        - Orelope
+                        - Ori-Ire
+                        - Oyo-West
+                        - Oyo-East
+                        - Saki-East
+                        - Saki-West
+                        - Surulere
+                      metadata:
+                        capital: Ibadan
+                        other_cities:
+                          - Ogbomoso
+                          - Iseyin
+                        lga_count: 33
+                        region: South West
+                        state_border:
+                          - Kwara
+                          - Osun
+                          - Ogun
+                        international_border:
+                          - Benin Republic
+                        slogan: The pacesetter State
+                        date_created: 3 February 1976
+                        current_govenor: Seyi Makinde
+                        Area: '28,454 km2 (10,986 sq mi)'
+                        coordinates: 8°00′N 4°00′E
+                        google_map_url: 'https://www.google.com/maps/place/Oyo,+Nigeria'
+                        population: 7512855
+                        GDP_2021:
+                          total: $23.8 billion
+                          per_capita: '$2,560'
+                        major_ethnic_groups:
+                          - Yoruba
+                          - Ibadan
+                          - Oyo
+                          - Ogbomoso
+                        major_languages:
+                          - Yoruba
+                          - English
+                        popular_dishes:
+                          - Amala and Ewedu Soup
+                          - Pounded Yam and Egusi Soup
+                          - Ogbomoso Bread
+                        image:
+                          flag_img: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Oyo_State_Flag.svg'
+                          seal_img: 'https://upload.wikimedia.org/wikipedia/commons/8/85/Oyo_State_Coat_of_Arms.png'
+                          map_img: 'https://upload.wikimedia.org/wikipedia/commons/0/00/Nigeria_-_Oyo.svg'
+                        website: 'http://www.oyostate.gov.ng/'
+                      _id: 647ee2e9d0cd5fa4fd5bdad7
+                  __v: 0
+            examples:
+              Example:
+                value:
+                  _id: string
+                  name: string
+                  states:
+                    - name: string
+                      lgas:
+                        - string
+                      metadata:
+                        capital: string
+                        other_cities:
+                          - string
+                        lga_count: 0
+                        region: string
+                        state_border:
+                          - string
+                        international_border:
+                          - string
+                        slogan: string
+                        date_created: string
+                        current_govenor: string
+                        Area: string
+                        coordinates: string
+                        google_map_url: string
+                        population: 0
+                        GDP_2021:
+                          total: string
+                          per_capita: string
+                        major_ethnic_groups:
+                          - string
+                        major_languages:
+                          - string
+                        popular_dishes:
+                          - string
+                        image:
+                          flag_img: string
+                          seal_img: string
+                          map_img: string
+                        website: string
+                      _id: string
+                  __v: 0
+          application/xml:
+            schema:
+              type: object
+          multipart/form-data:
+            schema:
+              type: object
+          text/html:
+            schema:
+              type: object
+          text/plain:
+            schema:
+              type: object
+          application/EDI-X12:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: OK success!
+          content:
+            application/json:
+              schema:
+                type: object
+              examples:
+                Example 1:
+                  value: {}
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+              examples:
+                Example (400):
+                  value:
+                    status: 400
+                    message: Invalid Authentication
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: object
+              examples:
+                Example (401):
+                  value:
+                    status: 401
+                    message: Invalid Api Key!
+      security:
+        - 685e21f0-2fcc-4695-a7b9-66268819527d: []
+      servers:
+        - url: 'http://localhost:3000'
+          description: dev
+  /api/v1/search/regions:
+    get:
+      tags:
+        - naijaData endpoints
+      summary: Get all Regions
+      description: Returns an array list of  the name of all the regions in Nigeria.
+      operationId: get-api-vi-search-regions
+      responses:
+        '200':
+          description: OK success!
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+                x-examples:
+                  Example 1:
+                    - South West
+                    - North Central
+                    - North East
+                    - South East
+                    - North West
+                    - South South
+              examples:
+                Example(200):
+                  value:
+                    - South West
+                    - North Central
+                    - North East
+                    - South East
+                    - North West
+                    - South South
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+              examples:
+                Example (400):
+                  value:
+                    status: 400
+                    message: Invalid Authentication
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: object
+              examples:
+                Example (401):
+                  value:
+                    status: 401
+                    message: Invalid Api Key!
+      security:
+        - 685e21f0-2fcc-4695-a7b9-66268819527d: []
+      servers:
+        - url: 'http://localhost:3000'
+          description: dev
+components:
+  securitySchemes:
+    685e21f0-2fcc-4695-a7b9-66268819527d:
+      type: http
+      scheme: bearer
+security:
+  - 685e21f0-2fcc-4695-a7b9-66268819527d: []
+x-internal: false
