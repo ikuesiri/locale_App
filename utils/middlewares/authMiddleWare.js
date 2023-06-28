@@ -8,7 +8,7 @@ const asyncHandler = require("../middlewares/AsyncHandler")
     const authHeader = req.headers.authorization;
     if(!authHeader  ||  ! authHeader.startsWith('Bearer ')){
         // throw new Error('Invalid Authentication')
-        const error = new CustomError("Invalid Authentication", 400)
+        const error = new CustomError("No Api Key found!", 400)
         return next(error)
     }
 
