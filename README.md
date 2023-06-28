@@ -204,3 +204,10 @@ Sign up as a new developer:
 To further Understand the API, Click [here](https://ikuesiri.stoplight.io/docs/locale-app/wb8agdpnx3yd4-locale-api) to access the live link to the documentation.
 
 - [Stoplight](https://stoplight.io/) was used for documentation. 
+
+## Contact
+If you have any questions, suggestions, or feedback, please feel free to contact Me:
+
+Name: Onosemuode Ikuesiri Kola
+Email: ikuesiri.onosemuode@gmail.com
+GitHub: https://github.com/ikuesiri
